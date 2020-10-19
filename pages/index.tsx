@@ -45,7 +45,16 @@ const Home = (props: {
 
       <div style={sectionStyle}>
         <h2>Projects</h2>
-        <div>links to projects</div>
+        <p
+          style={{
+            textAlign: 'center',
+            maxWidth: '600px',
+            margin: 'auto',
+            ...pStyle,
+          }}
+        >
+          Here is a list of my projects
+        </p>
       </div>
 
 
@@ -104,6 +113,10 @@ const Home = (props: {
         </button>
       </div>
     </div>
+
+
+
+
 
 
   );
