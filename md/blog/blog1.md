@@ -1,12 +1,12 @@
 ---
-title: Dan Abramov knows about Devii
+title: Post Template
 published: true
 datePublished: 1594425078471
 author: Colin McDonnell
 tags:
-  - Dan Abramov
+  - Post
 authorPhoto: /profile.jpg
-bannerPhoto: /danabramov.png
+bannerPhoto: https://picsum.photos/id/1019/1280/960/
 thumbnailPhoto: /danabramov_thumb.png
 canonicalUrl: https://devii.dev/blog/dan-abramov
 ---

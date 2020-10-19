@@ -9,7 +9,7 @@ import { globals } from '../globals';
 
 const sectionStyle = {
   width: '100%',
-  padding: '100px 3vw',
+  padding: '30px 3vw',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
@@ -39,6 +39,7 @@ const Home = (props: {
         <div style={{ maxWidth: '550px' }}>
           {/* comment */}
           <Markdown source={props.introduction} />
+          <p>social icons</p>
         </div>
       </div>
 

@@ -2,6 +2,8 @@ import React from 'react';
 import { globals } from '../globals';
 import Link from 'next/link';
 
+// import '../../global.css';
+
 
 export const Header: React.FC = () => (
   <div
@@ -25,7 +27,10 @@ export const Header: React.FC = () => (
     <a href="https://github.com/vriad/devii" style={{ textDecoration: 'none' }}>
       <p style={{ padding: '0px 1em', color: 'white' }}>GitHub</p>
     </a>
-    <Link href={`/blog/the-ultimate-tech-stack`}>TODO</Link>
+
+      <Link  href={`/blog/the-ultimate-tech-stack`}>Blog</Link>
+      <Link  href={`/about`}>About</Link>
+
     <a href="/blog/the-ultimate-tech-stack" style={{ textDecoration: 'none' }}>
       <p style={{ padding: '0px 1em', color: 'white' }}>Motivation</p>
     </a>

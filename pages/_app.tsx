@@ -4,6 +4,9 @@ import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { globals } from '../globals';
 
+import './global.css';
+
+
 const App: React.FC = ({ Component, pageProps }: any) => {
   return (
     <div
@@ -36,9 +39,13 @@ const App: React.FC = ({ Component, pageProps }: any) => {
           ></script>
         )}
       </Head>
+
       <Header />
+
       <Component {...pageProps} />
+
       <div style={{ flex: 1 }} />
+
       <Footer />
       <style jsx global>{`
         // reset.css
