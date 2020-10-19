@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link'
 
 import { PostData, loadBlogPosts, loadMarkdownFile } from '../loader';
 import { PostCard } from '../components/PostCard';
@@ -54,6 +55,8 @@ const Home = (props: {
           }}
         >
           Here is a list of my projects
+          <Link href={`/menlo`}>TODO Menlo</Link>
+
         </p>
       </div>
 
