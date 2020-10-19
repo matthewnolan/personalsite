@@ -18,7 +18,6 @@ const pStyle = { lineHeight: 1.7 };
 
 const Home = (props: {
   introduction: string;
-  features: string;
   readme: string;
   posts: PostData[];
 }) => {
@@ -26,94 +25,65 @@ const Home = (props: {
     <div style={{ width: '100%' }}>
 
 
+
       <Head>
-        <title>Introducing Devii</title>
+        <title>Matthew Nolan</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-
-      <div style={{ maxWidth: '550px', margin: 'auto', padding: '50px 3vw' }}>
-        <Markdown source={props.introduction} />
-      </div>
 
 
       <div style={sectionStyle}>
         <h2 style={{ margin: '4px 0px', fontSize: '34pt' }}>Hello</h2>
         <div style={{ maxWidth: '550px' }}>
-          <Markdown source={props.features} />
+          {/* comment */}
+          <Markdown source={props.introduction} />
         </div>
       </div>
 
 
 
       <div style={sectionStyle}>
-        <h2 style={{ margin: '4px 0px', fontSize: '34pt' }}>My blog posts</h2>
-        <p style={{ maxWidth: '550px', paddingBottom: '30px', ...pStyle }}>
-          This section demonstrates the power of dynamic imports. Every Markdown
-          file under <code>/md/blog</code> is automatically parsed into a
-          structured TypeScript object and available in the{' '}
-          <code>props.posts</code> array. These blog post "cards" are
-          implemented in the
-          <code>/components/PostCard.tsx</code> component.
-        </p>
+        <h2>Projects</h2>
+        <div>links to projects</div>
+      </div>
+
+
+      <div style={sectionStyle}>
+        <h2>Featured in...</h2>
+        <div>logos</div>
+      </div>
+
+
+
+      <div style={sectionStyle}>
+        <h2 style={{ fontSize: '34pt' }}>Recent Posts</h2>
         <div
           style={{
-            display: 'grid',
-            gridTemplateColumns: `repeat(auto-fit, minmax(300px,1fr))`,
-            gridRowGap: '8px',
-            gridColumnGap: '8px',
             width: '100%',
-            padding: '0px 7vw',
+            backgroundColor: '#eeeeee',
+            padding: '0px 3vw 50px 3vw',
           }}
         >
-          {props.posts.map((post, j) => {
-            return <PostCard post={post} key={j} />;
-          })}
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: `repeat(auto-fit, minmax(300px,1fr))`,
+              gridRowGap: '8px',
+              gridColumnGap: '8px',
+              width: '100%',
+              padding: '0px 7vw',
+            }}
+          >
+            {props.posts.map((post, j) => {
+              return <PostCard post={post} key={j} />;
+            })}
+          </div>
+
         </div>
       </div>
 
 
-
-
-
-
-
-      <div style={{ ...sectionStyle }}>
-        <h2 style={{ textAlign: 'center', fontSize: '34pt' }}>README.md</h2>
-        <p
-          style={{
-            textAlign: 'center',
-            maxWidth: '600px',
-            margin: 'auto',
-            ...pStyle,
-          }}
-        >
-          Below is the README.md for devii. It was imported and rendered using
-          Next.js dynamic imports. The rest of this page (including this
-          paragraph) are rendered with React. You can also read the README on
-          GitHub at{' '}
-          <a href="https://github.com/vriad/devii">
-            https://github.com/vriad/devii
-          </a>
-          .
-        </p>
-      </div>
-      <div
-        style={{
-          width: '100%',
-          backgroundColor: '#eeeeee',
-          padding: '0px 3vw 50px 3vw',
-        }}
-      >
-        <div
-          style={{
-            maxWidth: '600px',
-            margin: 'auto',
-          }}
-        >
-          <Markdown source={props.readme} />
-        </div>
-      </div>
       <div style={sectionStyle}>
         <h2
           style={{ margin: '4px 0px', fontSize: '22pt', paddingBottom: '30px' }}
@@ -134,13 +104,14 @@ const Home = (props: {
         </button>
       </div>
     </div>
+
+
   );
 };
 export default Home;
 
 export const getStaticProps = async () => {
   const introduction = await loadMarkdownFile('introduction.md');
-  const features = await loadMarkdownFile('features.md');
   const readmeFile = await import(`../${'README.md'}`);
   const readme = readmeFile.default;
 
@@ -152,7 +123,6 @@ export const getStaticProps = async () => {
 
   const props = {
     introduction: introduction.contents,
-    features: features.contents,
     readme: readme,
     posts,
   };
