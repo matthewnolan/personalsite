@@ -1,12 +1,10 @@
 
 body {
-	background: green;
+	/*background: green;*/
 }
 
 .navBar {
-
-
-	top: 0;
+/*	top: 0;
 	width: 100%;
 	height: 50px;
 	display: flex;
@@ -16,7 +14,7 @@ body {
 	background-color: red;
 	padding: 30px;
 	font-size: 12pt;
-
+*/
 }
 
 .navBarItems {
