@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/test/styles.css" type="text/css" ?>
+<?xml-stylesheet href="test/test/styles.xls" type="text/xsl" ?>
+
+      <urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
+      http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+      xmlns:xhtml="http://www.w3.org/1999/xhtml">
+      <url><loc>https://example.com/blog/[blog]</loc>
+                <xhtml:link rel="alternate" hreflang="en" href="https://example.en/blog/[blog]" /><xhtml:link rel="alternate" hreflang="es" href="https://example.es/blog/[blog]" /><xhtml:link rel="alternate" hreflang="ja" href="https://example.jp/blog/[blog]" /><xhtml:link rel="alternate" hreflang="fr" href="https://example.fr/blog/[blog]" />
+                
+                
+                <lastmod>2020-10-20</lastmod>
+                </url><url><loc>https://example.com/index</loc>
+                <xhtml:link rel="alternate" hreflang="en" href="https://example.en/index" /><xhtml:link rel="alternate" hreflang="es" href="https://example.es/index" /><xhtml:link rel="alternate" hreflang="ja" href="https://example.jp/index" /><xhtml:link rel="alternate" hreflang="fr" href="https://example.fr/index" />
+                
+                
+                <lastmod>2020-10-20</lastmod>
+                </url><url><loc>https://example.com/extraPath</loc>
+                <xhtml:link rel="alternate" hreflang="en" href="https://example.en/extraPath" /><xhtml:link rel="alternate" hreflang="es" href="https://example.es/extraPath" /><xhtml:link rel="alternate" hreflang="ja" href="https://example.jp/extraPath" /><xhtml:link rel="alternate" hreflang="fr" href="https://example.fr/extraPath" />
+                
+                
+                <lastmod>2020-10-20</lastmod>
+                </url></urlset>
