@@ -1,3 +1,17 @@
+yarn dev
+yarn build
+yarn export
+
+
+
+
+https://github.com/vriad/devii
+https://devii.dev/
+https://vriad.com/essays/devii
+
+
+
+
 <p align="center">
   <h1 align="center">Devii</h1>
 </p>

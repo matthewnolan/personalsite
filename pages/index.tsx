@@ -24,19 +24,28 @@ const Home = (props: {
 }) => {
   return (
     <div style={{ width: '100%' }}>
+
+
       <Head>
         <title>Introducing Devii</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+
       <div style={{ maxWidth: '550px', margin: 'auto', padding: '50px 3vw' }}>
         <Markdown source={props.introduction} />
       </div>
+
+
       <div style={sectionStyle}>
-        <h2 style={{ margin: '4px 0px', fontSize: '34pt' }}>Features</h2>
+        <h2 style={{ margin: '4px 0px', fontSize: '34pt' }}>Hello</h2>
         <div style={{ maxWidth: '550px' }}>
           <Markdown source={props.features} />
         </div>
       </div>
+
+
+
       <div style={sectionStyle}>
         <h2 style={{ margin: '4px 0px', fontSize: '34pt' }}>My blog posts</h2>
         <p style={{ maxWidth: '550px', paddingBottom: '30px', ...pStyle }}>
@@ -63,26 +72,11 @@ const Home = (props: {
         </div>
       </div>
 
-      <div style={{ ...sectionStyle }}>
-        <h2 style={{ textAlign: 'center', fontSize: '34pt' }}>Testimonials</h2>
-        <blockquote
-          style={{
-            borderLeft: `3px solid ${globals.accentColor}`,
-            paddingLeft: '20px',
-          }}
-        >
-          <p style={{ fontSize: '20pt' }}>
-            <em>Seems like it might be useful!</em>
-          </p>
 
-          <p style={{ textAlign: 'right' }}>
-            — Dan Abramov, taken{' '}
-            <a href="https://github.com/vriad/devii/issues/2" target="_blank">
-              utterly out of context
-            </a>
-          </p>
-        </blockquote>
-      </div>
+
+
+
+
 
       <div style={{ ...sectionStyle }}>
         <h2 style={{ textAlign: 'center', fontSize: '34pt' }}>README.md</h2>
