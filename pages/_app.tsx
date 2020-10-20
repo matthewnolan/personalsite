@@ -68,6 +68,8 @@ const App: React.FC = ({ Component, pageProps }: any) => {
         * {
           box-sizing: border-box;
         }
+
+        .hidden {display:none !important;}
       `}</style>
     </div>
   );

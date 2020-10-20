@@ -70,18 +70,28 @@ const Home = (props: {
 
 
       <div style={sectionStyle}>
-        <h2 style={{ fontSize: '34pt' }}>Recent Posts</h2>
+        <h2>Featured in...</h2>
+        <div>logos</div>
+      </div>
+
+
+
+      <div style={sectionStyle}>
+        <h2>Recent Posts</h2>
         <div
+          className="list-group"
           style={{
             width: '100%',
-            backgroundColor: '#eeeeee',
-            padding: '0px 3vw 50px 3vw',
+            // backgroundColor: '#eeeeee',
+            // padding: '0px 3vw 50px 3vw',
           }}
         >
+
+
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: `repeat(auto-fit, minmax(300px,1fr))`,
+              gridTemplateColumns: `repeat(auto-fit, minmax(400px,1fr))`,
               gridRowGap: '8px',
               gridColumnGap: '8px',
               width: '100%',
