@@ -40,6 +40,10 @@ const Home = (props: {
           {/* comment */}
           <Markdown source={props.introduction} />
           <p>social icons</p>
+          <small className="text-muted">With faded secondary text</small>
+          <div className="alert alert-primary" role="alert">
+  This is a primary alert—check it out!
+</div>
         </div>
       </div>
 
