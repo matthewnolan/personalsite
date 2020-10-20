@@ -11,11 +11,11 @@ const App: React.FC = ({ Component, pageProps }: any) => {
   return (
     <div
       style={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        minHeight: '100vh',
+        // display: 'flex',
+        // flexDirection: 'column',
+        // justifyContent: 'center',
+        // alignItems: 'center',
+        // minHeight: '100vh',
       }}
     >
       <Head>

@@ -6,33 +6,30 @@ import Link from 'next/link';
 
 
 export const Header: React.FC = () => (
-  <div
-    style={{
-      top: 0,
-      width: '100%',
-      height: '50px',
-      display: 'flex',
-      flexDirection: 'row',
-      alignItems: 'center',
-      justifyContent: 'space-between',
-      backgroundColor: globals.accentColor,
-      padding: '30px',
-      fontSize: '12pt',
-    }}
-  >
-    <a href="/" style={{ textDecoration: 'none' }}>
-      <p style={{ color: 'white' }}>{globals.siteName}</p>
-    </a>
-    <div style={{ flex: 1 }} />
-    <a href="https://github.com/vriad/devii" style={{ textDecoration: 'none' }}>
-      <p style={{ padding: '0px 1em', color: 'white' }}>GitHub</p>
-    </a>
 
-      <Link  href={`/blog/the-ultimate-tech-stack`}>Blog</Link>
-      <Link  href={`/about`}>About</Link>
+      <nav className="navbar navbar-expand-sm navbar-light bg-light">
 
-    <a href="/blog/the-ultimate-tech-stack" style={{ textDecoration: 'none' }}>
-      <p style={{ padding: '0px 1em', color: 'white' }}>Motivation</p>
-    </a>
-  </div>
+        <Link href={`/`}><a className="navbar-brand">{globals.siteName}</a></Link>
+
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon" />
+        </button>
+
+        <div className="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul className="navbar-nav ml-auto">
+
+            <li className="nav-item">
+              <Link href={`/about`}><a className="nav-link">About</a></Link>
+            </li>
+
+            <li className="nav-item">
+              <Link href={`/menlo`}><a className="nav-link">menlo</a></Link>
+            </li>
+
+
+          </ul>
+        </div>
+
+      </nav>
+
 );
