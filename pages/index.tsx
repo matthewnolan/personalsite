@@ -27,10 +27,10 @@ const Home = (props: {
         </p>
 
         <p className="text-center">
-          <a href="#" target="_blank" className="btn btn-link">Twitter</a>
-          <a href="#" target="_blank" className="btn btn-link">LinkedIn</a>
+          <a href="https://twitter.com/ImMatthewNolan" target="_blank" className="btn btn-link">Twitter</a>
+          <a href="http://www.linkedin.com/in/buildbuildbuild/" target="_blank" className="btn btn-link">LinkedIn</a>
           <a href="#" target="_blank" className="btn btn-link">Instagram</a>
-          <a href="#" target="_blank" className="btn btn-link">Github</a>
+          <a href="https://github.com/matthewnolan" target="_blank" className="btn btn-link">Github</a>
           <a href="#" target="_blank" className="btn btn-link">Angel List</a>
         </p>
       </section>

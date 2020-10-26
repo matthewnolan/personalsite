@@ -3,12 +3,15 @@ title: Post Template
 published: true
 datePublished: 1594425078471
 author: Matthew Nolan
-tags:
-  - Post
-authorPhoto: /profile.jpg
+authorTwitter: ImMatthewNolan
+authorPhoto: /matthew-nolan-photo.jpg
+tags: 
+  - Static Site Generators
+  - React
+  - Next.js
+thumbnailPhoto: https://picsum.photos/id/1019/80/80/
 bannerPhoto: https://picsum.photos/id/1019/1280/960/
-thumbnailPhoto: /danabramov_thumb.png
-canonicalUrl: https://devii.dev/blog/dan-abramov
+canonicalUrl: https://vriad.com/essays/devii
 ---
 
 Dan Abramov knows about Devii!
@@ -17,3 +20,4 @@ Dan Abramov knows about Devii!
 > — Dan Abramov, taken entirely out of context
 
 I don't want to brag, but Devii is kind of a big deal.
+
