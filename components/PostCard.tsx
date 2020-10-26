@@ -15,8 +15,6 @@ export const PostCard: React.FC<{ post: PostData }> = (props) => {
 
         <img src={post.thumbnailPhoto} className="mr-3 -hidden" alt={post.title} 
             style={{
-              // background: `url(${post.thumbnailPhoto}) no-repeat center center`,
-              // backgroundSize: 'cover',
               width: '80px',
               height: '80px',
               objectFit: 'cover'

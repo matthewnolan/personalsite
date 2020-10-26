@@ -5,7 +5,7 @@ import { PostData, loadBlogPosts, loadMarkdownFile } from '../loader';
 import { PostCard } from '../components/PostCard';
 import { generateRSS } from '../rssUtil';
 import { Markdown } from '../components/Markdown';
-import { globals } from '../globals';
+// import { globals } from '../globals';
 
 const sectionStyle = {
   width: '100%',
@@ -15,7 +15,6 @@ const sectionStyle = {
   alignItems: 'center',
 } as const;
 
-const pStyle = { lineHeight: 1.7 };
 
 const Home = (props: {
   introduction: string;
@@ -35,9 +34,10 @@ const Home = (props: {
 
 
       <div style={sectionStyle}>
-        <h2 style={{ margin: '4px 0px', fontSize: '34pt' }}>Hello</h2>
-        <div style={{ maxWidth: '550px' }}>
+        <h2>Hello</h2>
+        <div>
           {/* comment */}
+          {/* intro, ted talk, media logos, social links. thats it! */}
           <Markdown source={props.introduction} />
           <p>social icons</p>
         </div>
@@ -47,17 +47,9 @@ const Home = (props: {
 
       <div style={sectionStyle}>
         <h2>Projects</h2>
-        <p
-          style={{
-            textAlign: 'center',
-            maxWidth: '600px',
-            margin: 'auto',
-            ...pStyle,
-          }}
-        >
+        <p>
           Here is a list of my projects
           <Link href={`/menlo`}>TODO Menlo</Link>
-
         </p>
       </div>
 
@@ -78,24 +70,15 @@ const Home = (props: {
 
       <div style={sectionStyle}>
         <h2>Recent Posts</h2>
-        <div
-          className="list-group"
-          style={{
-            width: '100%',
-            // backgroundColor: '#eeeeee',
-            // padding: '0px 3vw 50px 3vw',
-          }}
-        >
-
-
+        <div className="list-group">
           <div
             style={{
-              display: 'grid',
-              gridTemplateColumns: `repeat(auto-fit, minmax(400px,1fr))`,
-              gridRowGap: '8px',
-              gridColumnGap: '8px',
-              width: '100%',
-              padding: '0px 7vw',
+              // display: 'grid',
+              // gridTemplateColumns: `repeat(auto-fit, minmax(400px,1fr))`,
+              // gridRowGap: '8px',
+              // gridColumnGap: '8px',
+              // width: '100%',
+              // padding: '0px 7vw',
             }}
           >
             {props.posts.map((post, j) => {
@@ -107,25 +90,7 @@ const Home = (props: {
       </div>
 
 
-      <div style={sectionStyle}>
-        <h2
-          style={{ margin: '4px 0px', fontSize: '22pt', paddingBottom: '30px' }}
-        >
-          Get started
-        </h2>
-        <button
-          style={{
-            padding: '10px 30px',
-            backgroundColor: globals.accentColor,
-            color: 'white',
-            fontSize: '14pt',
-            border: 'none',
-            borderRadius: '10px',
-          }}
-        >
-          Fork Devii on GitHub
-        </button>
-      </div>
+
     </div>
 
 
