@@ -53,7 +53,6 @@ const App: React.FC = ({ Component, pageProps }: any) => {
 
       </div>
 
-      <div style={{ flex: 1 }} />
 
       <Footer />
       <style jsx global>{`
@@ -76,6 +75,9 @@ const App: React.FC = ({ Component, pageProps }: any) => {
 
         .hidden {display:none !important;}
       `}</style>
+
+      <div style={{ flex: 1 }} />
+      
     </div>
   );
 };

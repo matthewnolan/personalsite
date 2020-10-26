@@ -81,6 +81,13 @@ const Home = (props: {
               </div>
             </section>
 
+
+            <section>
+              <h5 className="text-center basicHeadline">Featured In</h5>
+              <p>...</p>
+            </section>
+
+            
           </div>
         </div>
 
