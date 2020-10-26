@@ -14,6 +14,12 @@ const About = () => {
       <div>
         <Link href={`/`}>TODO Home</Link>
         About Stuff
+
+        A bulleted list of things Ive done
+
+        *built asino
+        *ted talk
+        *co-founded record label DTM
       </div>
 
     </div>

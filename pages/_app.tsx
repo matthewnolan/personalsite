@@ -42,11 +42,16 @@ const App: React.FC = ({ Component, pageProps }: any) => {
           rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Header />
 
-      <Component {...pageProps} />
+      <div className="container">
+
+          <Component {...pageProps} />
+
+      </div>
 
       <div style={{ flex: 1 }} />
 

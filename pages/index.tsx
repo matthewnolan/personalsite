@@ -7,14 +7,6 @@ import { generateRSS } from '../rssUtil';
 import { Markdown } from '../components/Markdown';
 // import { globals } from '../globals';
 
-const sectionStyle = {
-  width: '100%',
-  padding: '30px 3vw',
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-} as const;
-
 
 const Home = (props: {
   introduction: string;
@@ -22,73 +14,75 @@ const Home = (props: {
   posts: PostData[];
 }) => {
   return (
-    <div style={{ width: '100%' }}>
-
-
+    <div>
 
       <Head>
         <title>Matthew Nolan</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
+        <div className="row justify-content-sm-center">
+          <div className="col col-sm-8">
 
+            <section>
+              <h5 className="text-center basicHeadline">Hi I'm Matthew Nolan</h5>
 
-      <div style={sectionStyle}>
-        <h2>Hello</h2>
-        <div>
-          {/* comment */}
-          {/* intro, ted talk, media logos, social links. thats it! */}
-          <Markdown source={props.introduction} />
-          <p>social icons</p>
-        </div>
-      </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
 
-
-
-      <div style={sectionStyle}>
-        <h2>Projects</h2>
-        <p>
-          Here is a list of my projects
-          <Link href={`/menlo`}>TODO Menlo</Link>
-        </p>
-      </div>
-
-
-      <div style={sectionStyle}>
-        <h2>Featured in...</h2>
-        <div>logos</div>
-      </div>
+              <p className="text-center">
+                <a href="#" target="_blank" className="btn btn-link">Twitter</a>
+                <a href="#" target="_blank" className="btn btn-link">LinkedIn</a>
+                <a href="#" target="_blank" className="btn btn-link">Instagram</a>
+                <a href="#" target="_blank" className="btn btn-link">Github</a>
+                <a href="#" target="_blank" className="btn btn-link">Angel List</a>
+              </p>
+            </section>
 
 
 
-      <div style={sectionStyle}>
-        <h2>Featured in...</h2>
-        <div>logos</div>
-      </div>
+            <section>
+              <p>I gave a TED talk about how my app Verona address growing problems in social media as a member of the TED Residenty class of '17. <Link href={`/`}>More info on the TED Residency program</Link>. <Link href={`/`}>More info on my app Verona</Link></p>
+            </section>
+
+            <section>
+              <h5 className="text-center basicHeadline">Featured In</h5>
+              <p>...</p>
+            </section>
 
 
+            <section>
+              <h5 className="text-center">Recent Posts</h5>
+              <div className="list-group">
+                <div
+                  style={{
+                    // display: 'grid',
+                    // gridTemplateColumns: `repeat(auto-fit, minmax(400px,1fr))`,
+                    // gridRowGap: '8px',
+                    // gridColumnGap: '8px',
+                    // width: '100%',
+                    // padding: '0px 7vw',
+                  }}
+                >
+                  {props.posts.map((post, j) => {
+                    return <PostCard post={post} key={j} />;
+                  })}
+                </div>
+              </div>
+            </section>
 
-      <div style={sectionStyle}>
-        <h2>Recent Posts</h2>
-        <div className="list-group">
-          <div
-            style={{
-              // display: 'grid',
-              // gridTemplateColumns: `repeat(auto-fit, minmax(400px,1fr))`,
-              // gridRowGap: '8px',
-              // gridColumnGap: '8px',
-              // width: '100%',
-              // padding: '0px 7vw',
-            }}
-          >
-            {props.posts.map((post, j) => {
-              return <PostCard post={post} key={j} />;
-            })}
+
+            <section className="hidden">
+              <h2>Hello</h2>
+              <div>
+                {/* comment */}
+                {/* intro, ted talk, media logos, social links. thats it! */}
+                <Markdown source={props.introduction} />
+                <p>social icons</p>
+              </div>
+            </section>
+
           </div>
-
         </div>
-      </div>
-
 
 
     </div>
