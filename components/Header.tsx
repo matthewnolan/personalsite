@@ -29,7 +29,7 @@ export const Header: React.FC = () => (
             </li>
 
             <li className="nav-item">
-              <a className="nav-link">Twitter</a>
+              <a className="nav-link" target="_blank" href="https://twitter.com/ImMatthewNolan">Twitter</a>
             </li>
 
 

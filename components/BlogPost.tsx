@@ -21,7 +21,9 @@ export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
       }}
     >
       <PostMeta post={post} />
-      <div style={{ width: '100%', maxWidth: '600px' }}>
+      <div style={{ 
+        // width: '100%', maxWidth: '600px' 
+      }}>
         {post.bannerPhoto && (
           <img
             style={{
@@ -31,13 +33,17 @@ export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
               margin: '0px',
             }}
             src={post.bannerPhoto}
+            alt={post.title}
           />
         )}
-        <div style={{ padding: '50px 3vw 50px 3vw' }}>
+        <div style={{ 
+          padding: '1em 0em' 
+          // padding: '50px 3vw 50px 3vw' 
+        }}>
           {title && (
             <h1
               style={{
-                margin: '10px 0px 10px 0px',
+                margin: '1em 0em',
                 padding: 0,
                 border: 'none',
               }}
@@ -48,7 +54,7 @@ export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
           {subtitle && (
             <h2
               style={{
-                margin: '10px 0px',
+                margin: '0.5em 0em',
                 padding: 0,
                 border: 'none',
                 fontWeight: 400,
@@ -70,7 +76,7 @@ export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
           <Author post={post} />
         </div>
 
-        <div style={{ width: '100%', padding: '0px 3vw' }}>
+        <div style={{ width: '100%', padding: '0px 0px' }}>
           <Markdown source={post.content} />
         </div>
       </div>

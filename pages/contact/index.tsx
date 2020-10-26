@@ -11,10 +11,7 @@ const Contact = () => {
       </Head>
 
       <section>
-        <p>
-          Contact 
-          <Link href={`/`}>A Link</Link>
-        </p>
+        <Link href={`/`}>Home</Link>
       </section>
 
 

@@ -12,10 +12,9 @@ const About = () => {
 
       <section>
           <h5>A bulleted list of things Ive done</h5>
-          <p>*built asino
+          <p>*casino
           *ted talk
-          *co-founded record label DTM
-          <Link href={`/`}>A Link</Link>
+          *music
           </p>
       </section>
 
@@ -23,6 +22,10 @@ const About = () => {
           <h5>Media Clips</h5>
           <p>video, articles, etc
           </p>
+      </section>
+
+      <section>
+        <Link href={`/`}>Home</Link>
       </section>
 
     </div>
