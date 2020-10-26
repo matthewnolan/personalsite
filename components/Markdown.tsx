@@ -5,6 +5,7 @@ import { globals } from '../globals';
 
 export const Markdown: React.FC<{ source: string }> = (props) => {
   // console.log(props.source);
+
   return (
     <div style={{ width: '100%' }} className="devii-markdown">
       <ReactMarkdown
@@ -12,6 +13,7 @@ export const Markdown: React.FC<{ source: string }> = (props) => {
         source={props.source}
         renderers={{
           code: Code,
+          link: props => <a href={props.href} target="_blank">{props.children}</a>
         }}
         escapeHtml={false}
       />

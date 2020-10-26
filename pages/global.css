@@ -24,6 +24,10 @@ section .basicHeadline {
 	padding-bottom:2em;
 }
 
+section p {
+  text-align: justify;
+  text-justify: inter-word;
+}
 
 
 
