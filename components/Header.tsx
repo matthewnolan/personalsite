@@ -21,15 +21,11 @@ export const Header: React.FC = () => (
           <ul className="navbar-nav ml-auto">
 
             <li className="nav-item">
-              <Link href={`/about`}><a className="nav-link">About</a></Link>
-            </li>
-
-            <li className="nav-item">
               <Link href={`/contact`}><a className="nav-link">Contact</a></Link>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" target="_blank" href="https://twitter.com/ImMatthewNolan">Twitter</a>
+              <a className="nav-link" target="_blank" href="https://twitter.com/ImMatthewNolan"><i class="fa fa-twitter fa-1x"></i></a>
             </li>
 
 

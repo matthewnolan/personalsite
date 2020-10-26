@@ -27,3 +27,25 @@ matt@track.one
 
 
 "electronic version of a primosary note"
+
+
+
+
+
+
+
+
+
+      <section>
+          <h5>A bulleted list of things Ive done</h5>
+          <p>*casino
+          *ted talk
+          *music
+          </p>
+      </section>
+
+      <section>
+          <h5>Media Clips</h5>
+          <p>video, articles, etc
+          </p>
+      </section>

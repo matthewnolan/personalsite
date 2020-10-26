@@ -21,9 +21,13 @@ const Home = (props: {
       </Head>
 
       <section>
-        <h5 className="text-center basicHeadline">Hi I'm Matthew Nolan</h5>
+        <div className="text-center basicHeadline">
+          <h5 className="">Hi I'm Matthew Nolan</h5>
+          <h6 className="">Entrepreneur, Engineer, Artist</h6>
+        </div>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.
+        <p>
+          Matthew Nolan is the founder of blockchain software software company <a href="https://menlo.one/" target="_blank">Menlo One</a>. He previously founded socoal discovery app <a href="https://www.getverona.com/" target="_blank">Verona</a>. Matthew has worked with companies like IBM, JP Morgan, and High 5 Games. Matthew gave a TED talk about how my app Verona addresses growing problems in social media as a member of the spring '19 TED Residenty class. <Link href={`/blog/ted-talk/`}>More info on the TED Residency</Link>.
         </p>
 
         <p className="text-center">
@@ -34,14 +38,11 @@ const Home = (props: {
         </p>
       </section>
 
-
-
-
       <section>
         <p className="embed-container">
           <iframe width={560} height={315} src="https://www.youtube.com/embed/M-SE6Fm6PGU" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
         </p>
-        <p>I gave a TED talk about how my app Verona addresses growing problems in social media as a member of the spring '19 TED Residenty class. <Link href={`/blog/ted-talk/`}>More info on the TED Residency</Link>. <Link href={`/`}>More info on the app Verona.</Link></p>
+
       </section>
 
       <section>
@@ -124,16 +125,6 @@ const Home = (props: {
         </div>
       </section>
 
-
-      <section className="hidden">
-        <h2>Hello</h2>
-        <div>
-          {/* comment */}
-          {/* intro, ted talk, media logos, social links. thats it! */}
-          <Markdown source={props.introduction} />
-          <p>social icons</p>
-        </div>
-      </section>
 
 
       <section>
