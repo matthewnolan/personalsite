@@ -2,7 +2,7 @@
 title: Post Template
 published: true
 datePublished: 1594425078471
-author: Colin McDonnell
+author: Matthew Nolan
 tags:
   - Post
 authorPhoto: /profile.jpg

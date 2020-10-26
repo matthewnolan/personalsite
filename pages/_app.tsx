@@ -48,9 +48,11 @@ const App: React.FC = ({ Component, pageProps }: any) => {
       <Header />
 
       <div className="container">
-
-          <Component {...pageProps} />
-
+        <div className="row justify-content-sm-center">
+          <div className="col col-sm-8">
+            <Component {...pageProps} />
+          </div>
+        </div>
       </div>
 
 
@@ -77,7 +79,7 @@ const App: React.FC = ({ Component, pageProps }: any) => {
       `}</style>
 
       <div style={{ flex: 1 }} />
-      
+
     </div>
   );
 };

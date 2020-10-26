@@ -10,18 +10,13 @@ const Contact = () => {
         <title>Contact</title>
       </Head>
 
-      <div className="row justify-content-sm-center">
-        <div className="col col-sm-8">
-          <section>
-            <p>
-              Contact 
+      <section>
+        <p>
+          Contact 
+          <Link href={`/`}>A Link</Link>
+        </p>
+      </section>
 
-              <Link href={`/`}>A Link</Link>
-
-            </p>
-          </section>
-        </div>
-      </div>
 
     </div>
   );

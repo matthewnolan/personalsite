@@ -10,23 +10,20 @@ const About = () => {
         <title>About</title>
       </Head>
 
-      <div className="row justify-content-sm-center">
-        <div className="col col-sm-8">
-          <section>
-            <p>
+      <section>
+          <h5>A bulleted list of things Ive done</h5>
+          <p>*built asino
+          *ted talk
+          *co-founded record label DTM
+          <Link href={`/`}>A Link</Link>
+          </p>
+      </section>
 
-              A bulleted list of things Ive done
-
-              *built asino
-              *ted talk
-              *co-founded record label DTM
-
-              <Link href={`/`}>A Link</Link>
-
-            </p>
-          </section>
-        </div>
-      </div>
+      <section>
+          <h5>Media Clips</h5>
+          <p>video, articles, etc
+          </p>
+      </section>
 
     </div>
   );
