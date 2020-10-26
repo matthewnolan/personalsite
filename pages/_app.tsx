@@ -9,15 +9,8 @@ import './global.css';
 
 const App: React.FC = ({ Component, pageProps }: any) => {
   return (
-    <div
-      style={{
-        // display: 'flex',
-        // flexDirection: 'column',
-        // justifyContent: 'center',
-        // alignItems: 'center',
-        // minHeight: '100vh',
-      }}
-    >
+    <div>
+
       <Head>
         {globals.googleAnalyticsId && (
           <script
@@ -39,11 +32,22 @@ const App: React.FC = ({ Component, pageProps }: any) => {
           ></script>
         )}
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
-
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@ImMatthewNolan" />
+        <meta name="twitter:title" content="Matthew Nolan Blog" />
+        <meta name="twitter:description" content="Matthew Nolan Blog" />
+        <meta name="twitter:creator" content="@ImMatthewNolan" />
+        <meta name="twitter:url" content="http://matthewnolan.xyz" />
 
         <link rel="icon" href="/favicon.ico" />
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+
+        <link rel="stylesheet" href="-https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+
       </Head>
 
       <Header />
