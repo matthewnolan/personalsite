@@ -10,7 +10,8 @@ https://devii.dev/
 https://vriad.com/essays/devii
 
 https://www.epochconverter.com/
-
+https://personalsite-gamma.vercel.app/
+https://web.dev/
 
 <p align="center">
   <h1 align="center">Devii</h1>

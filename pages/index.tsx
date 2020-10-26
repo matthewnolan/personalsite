@@ -36,20 +36,18 @@ const Home = (props: {
 
 
 
+
       <section>
-        <div className="text-center">
+        <p className="embed-container">
           <iframe width={560} height={315} src="https://www.youtube.com/embed/M-SE6Fm6PGU" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
-        </div>
-        <p>I gave a TED talk about how my app Verona addresses growing problems in social media as a member of the spring '19 TED Residenty class. <Link href={`/`}>More info on the TED Residency program</Link>. <Link href={`/`}>More info on the app.</Link></p>
+        </p>
+        <p>I gave a TED talk about how my app Verona addresses growing problems in social media as a member of the spring '19 TED Residenty class. <Link href={`/blog/ted-talk/`}>More info on the TED Residency</Link>. <Link href={`/`}>More info on the app Verona.</Link></p>
       </section>
 
       <section>
         <h5 className="text-center basicHeadline">Featured In</h5>
-        <div>
-
-
-<div className="mediaLogos">
-    <div className="mediaLogos-wrapper">
+        <div className="mediaLogos">
+            <div className="mediaLogos-wrapper">
 
 <a target="_blank" className="menloLogos" href="https://www.forbes.com/sites/andrewrossow/2018/07/10/top-10-new-blockchain-companies-to-watch-for-in-2018">
   <img src="/images/logos/logo-forbes.svg" alt="Forbes" /></a>
@@ -101,11 +99,7 @@ const Home = (props: {
 <a target="_blank" className="menloLogos" href="https://www.vice.com/fr/article/wng8vq/verona-veut-toujours-vous-faire-pecho-votre-pire-ennemi">
   <img src="/images/logos/m-logo-motherboard.png" /></a>
 
-</div>
-</div>
-
-
-
+          </div>
         </div>
       </section>
 
