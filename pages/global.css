@@ -73,3 +73,15 @@ section p {
 
 
 
+
+/*--- GLOBAL ANIMATION UTILITIES ---*/
+
+a * {
+    transition: .2s opacity linear;
+}
+a:hover * {
+    opacity: .4;
+}
+
+
+

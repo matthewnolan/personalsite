@@ -22,6 +22,16 @@ Best way to contact me:
 
 
 
+https://tympanus.net/codrops/2017/11/28/decorative-webgl-backgrounds/
+https://github.com/Mamboleoo/DecorativeBackgrounds/
+https://www.gradient-animator.com/
+https://www.vantajs.com/
+https://cssgradient.io/gradient-backgrounds/
+
+--- JUST DO A SIMPLE MINIMAL BACKGROND LKE HERE
+https://www.pinterest.com/pin/822610688162692008/
+
+
 matt@track.one
 
 

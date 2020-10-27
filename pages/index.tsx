@@ -22,6 +22,7 @@ const Home = (props: {
 
       <section>
         <div className="text-center basicHeadline">
+          <img className="rounded-circle img-thumbnail" src="/images/matthew-nolan-thumbnail.jpg" alt="Matthew Nolan" style={{ maxWidth: '80px', margin: '1em' }} />
           <h5 className="">Hi I'm Matthew Nolan</h5>
           <h6 className="">Entrepreneur, Engineer, Artist</h6>
         </div>
@@ -105,7 +106,7 @@ const Home = (props: {
       </section>
 
 
-      <section>
+      <section className="hidden">
         <h5 className="text-center">Recent Posts</h5>
         <div className="list-group">
           <div
