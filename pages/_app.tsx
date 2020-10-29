@@ -32,13 +32,6 @@ const App: React.FC = ({ Component, pageProps }: any) => {
           ></script>
         )}
 
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@ImMatthewNolan" />
-        <meta name="twitter:title" content="Matthew Nolan's Blog" />
-        <meta name="twitter:description" content="Matthew Nolan's Blog" />
-        <meta name="twitter:creator" content="@ImMatthewNolan" />
-        <meta name="twitter:url" content="http://matthewnolan.xyz" />
-
         <link rel="icon" href="/favicon.ico" />
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />

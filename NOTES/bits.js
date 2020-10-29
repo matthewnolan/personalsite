@@ -16,6 +16,18 @@
 
 
 
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@ImMatthewNolan" />
+        <meta name="twitter:title" content="Matthew Nolan's Blog" />
+        <meta name="twitter:description" content="Matthew Nolan's Blog" />
+        <meta name="twitter:creator" content="@ImMatthewNolan" />
+        <meta name="twitter:url" content="http://matthewnolan.xyz" />
+
+
+
+
+
+
 <a target="_blank" className="menloLogos hidden" href="https://bitcoinexchangeguide.com/civic-secure-identity-platform-selected-for-menlo-one-for-blockchain-verification/"><img src="/images/logos/logo-beg.png" alt="Bitcoin Exchange Guide Blockchain media article about the decentralized menlo one blockchain framework" /></a>
 
 <a target="_blank" className="menloLogos hidden" href="https://theblockchainland.com/2018/08/28/top-10-promising-blockchain-projects-of-2018/"><img src="/images/logos/logo-blockchainland.png" alt="Blockchain Land Blockchain media article about the decentralized menlo one blockchain framework" /></a>
