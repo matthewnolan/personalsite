@@ -9,8 +9,6 @@ import { Markdown } from '../components/Markdown';
 
 
 const Home = (props: {
-  introduction: string;
-  readme: string;
   posts: PostData[];
 }) => {
   return (
@@ -20,34 +18,46 @@ const Home = (props: {
         <title>Matthew Nolan</title>
       </Head>
 
-      <section>
+      <section
+            style={{
+              marginTop: '2em'
+            }}
+      >
         <div className="text-center basicHeadline">
           <img className="rounded-circle img-thumbnail" src="/images/matthew-nolan-thumbnail.jpg" alt="Matthew Nolan" style={{ maxWidth: '80px', margin: '1em' }} />
-          <h5 className="">Hi I'm Matthew Nolan</h5>
+          <h4 className="">Hi I'm Matthew Nolan</h4>
           <h6 className="">Entrepreneur, Engineer, Artist</h6>
         </div>
+        <div className="basicHeadline">
+          <p className="text-center">
+            <a href="https://twitter.com/ImMatthewNolan" target="_blank" className="btn btn-link">Twitter</a>
+            <a href="http://www.linkedin.com/in/buildbuildbuild/" target="_blank" className="btn btn-link">LinkedIn</a>
+            <a href="https://github.com/matthewnolan" target="_blank" className="btn btn-link">Github</a>
+            <a href="https://angel.co/u/matthew-nolan" target="_blank" className="btn btn-link">Angel List</a>
+          </p>
+        </div>
 
-        <p>
-          Matthew Nolan is the founder of blockchain software software company <a href="https://menlo.one/" target="_blank">Menlo One</a>. He previously founded socoal discovery app <a href="https://www.getverona.com/" target="_blank">Verona</a>. Matthew has worked with companies like IBM, JP Morgan, and High 5 Games. Matthew gave a TED talk about how my app Verona addresses growing problems in social media as a member of the spring '19 TED Residenty class. <Link href={`/blog/ted-talk/`}>More info on the TED Residency</Link>.
-        </p>
+        <div className="lead">
+          <p>
+          Hi I'm Matthew Nolan, an entrepreneur, engineer, artist. The focus of my career is to make society more free, open, and better connected by using new tech to solve old problems. I'm a <Link href={`/blog/ted-talk/`}>TED Resident alum</Link> and public speaker on the intersection of society, technology, and culture.
+          </p><p>
+          My belief is the Internet can do more than show us the world, it can help us to re-think it. I previously founded <a href="https://www.getverona.com/" target="_blank">Verona</a>, an app that connects people across social and political divides, allowing people to form friendships they never thought we're possible. At the dawn of the virtual work movement I co-founded Speek, a meeting and collaboration platform that made it easier for teams to work together. I also previously worked at IBM where I developed tools to better understand how people use social media.
+          </p><p>
+          I've done a lot of work in the digitization of value. I've worked at traditional financial institutions like JP Morgan, but most of work has been focused on blockchain technology which I've been involved in since it's early days. I'm currently the founder and CEO of <a href="https://menlo.one/" target="_blank">Menlo One</a>, a blockchain technology company that makes it easy to build products that are secure, transparent, and censorship resistant. 
+          </p>
+        </div>
 
-        <p className="text-center">
-          <a href="https://twitter.com/ImMatthewNolan" target="_blank" className="btn btn-link">Twitter</a>
-          <a href="http://www.linkedin.com/in/buildbuildbuild/" target="_blank" className="btn btn-link">LinkedIn</a>
-          <a href="https://github.com/matthewnolan" target="_blank" className="btn btn-link">Github</a>
-          <a href="https://angel.co/u/matthew-nolan" target="_blank" className="btn btn-link">Angel List</a>
-        </p>
       </section>
 
       <section>
         <p className="embed-container">
           <iframe width={560} height={315} src="https://www.youtube.com/embed/M-SE6Fm6PGU" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
         </p>
-
       </section>
 
+
       <section>
-        <h5 className="text-center basicHeadline">Featured In</h5>
+        <h4 className="text-center">Featured In</h4>
         <div className="mediaLogos">
             <div className="mediaLogos-wrapper">
 
@@ -59,14 +69,10 @@ const Home = (props: {
   <img src="/images/logos/logo-inc.png" alt="Inc Magazine Blockchain media article about the decentralized menlo one blockchain framework" /></a>
 <a target="_blank" className="menloLogos" href="https://www.entrepreneur.com/article/316184">
   <img src="/images/logos/logo-entrepreneur.png" alt="Entrepreneur Blockchain media article about the decentralized menlo one blockchain framework" /></a>
-<a target="_blank" className="menloLogos" href="https://www.influencive.com/menlo-one-ceo-matthew-nolan-on-building-the-future-of-decentralized-applications-dapps/">
-  <img src="/images/logos/logo-influencive.png" alt="Influencive Blockchain media article about the decentralized menlo one blockchain framework" /></a>
+<a target="_blank" className="menloLogos" href="https://www.vice.com/fr/article/wng8vq/verona-veut-toujours-vous-faire-pecho-votre-pire-ennemi"><img src="/images/logos/m-logo-motherboard.png" /></a>
+<a target="_blank" className="menloLogos" href="https://www.influencive.com/menlo-one-ceo-matthew-nolan-on-building-the-future-of-decentralized-applications-dapps/"><img src="/images/logos/logo-influencive.png" alt="Influencive Blockchain media article about the decentralized menlo one blockchain framework" /></a>
 <a target="_blank" className="menloLogos" href="https://hackernoon.com/scammed-in-an-ico-3b106fc84031">
   <img src="/images/logos/logo-hackernoon.png" alt="Hackernoon" /></a>
-<a target="_blank" className="menloLogos" href="https://bitcoinexchangeguide.com/civic-secure-identity-platform-selected-for-menlo-one-for-blockchain-verification/">
-  <img src="/images/logos/logo-beg.png" alt="Bitcoin Exchange Guide Blockchain media article about the decentralized menlo one blockchain framework" /></a>
-<a target="_blank" className="menloLogos" href="https://theblockchainland.com/2018/08/28/top-10-promising-blockchain-projects-of-2018/">
-  <img src="/images/logos/logo-blockchainland.png" alt="Blockchain Land Blockchain media article about the decentralized menlo one blockchain framework" /></a>
 <a target="_blank" className="menloLogos" href="https://nulltx.com/what-are-dapp-scaling-frameworks/"><img src="/images/logos/logo-nulltx.png" alt="The Merkle Null TX Blockchain media article about the decentralized menlo one blockchain framework" /></a>
 <a target="_blank" className="menloLogos"  href="https://www.fastcompany.com/3057048/new-app-wants-to-make-peace-between-trump-supporters-and-latinos">
   <img src="/images/logos/fast-company-verona.png" /></a>
@@ -98,13 +104,10 @@ const Home = (props: {
   <img src="/images/logos/m-logo-fox-news.png" /></a>
 <a target="_blank" className="menloLogos" href="http://mic.com/articles/136375/i-tried-a-tinder-for-democrats-and-republicans">
   <img src="/images/logos/m-logo-mic.png" /></a>
-<a target="_blank" className="menloLogos" href="https://www.vice.com/fr/article/wng8vq/verona-veut-toujours-vous-faire-pecho-votre-pire-ennemi">
-  <img src="/images/logos/m-logo-motherboard.png" /></a>
 
           </div>
         </div>
       </section>
-
 
       <section className="hidden">
         <h5 className="text-center">Recent Posts</h5>
@@ -127,16 +130,7 @@ const Home = (props: {
       </section>
 
 
-
-      <section>
-        <h5 className="text-center basicHeadline"></h5>
-      </section>
-
-
     </div>
-
-
-
 
 
 
@@ -145,10 +139,6 @@ const Home = (props: {
 export default Home;
 
 export const getStaticProps = async () => {
-  const introduction = await loadMarkdownFile('introduction.md');
-  const readmeFile = await import(`../${'README.md'}`);
-  const readme = readmeFile.default;
-
   const posts = await loadBlogPosts();
 
   // comment out to turn off RSS generation
@@ -156,8 +146,6 @@ export const getStaticProps = async () => {
   await generateRSS(posts);
 
   const props = {
-    introduction: introduction.contents,
-    readme: readme,
     posts,
   };
   return { props };

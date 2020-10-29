@@ -3,8 +3,8 @@ html {
   min-height: 100%;
 }
 
-body {
-  margin-bottom: 160px; /* Margin bottom by footer height */
+.container {
+  margin-bottom: 4em; /* Margin bottom by footer height */
 }
 
 .footer {

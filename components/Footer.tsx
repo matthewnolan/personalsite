@@ -6,9 +6,9 @@ export const Footer: React.FC = () => (
 
     <footer className="footer">
       <div className="container-fluid">
-        <span className="text-muted">
+        <small className="text-muted">
           {`© ${globals.yourName} ${new Date().getFullYear()}`} -  <a href="/rss.xml" target="_blank">RSS</a>
-        </span>
+        </small>
       </div>
     </footer>
 
