@@ -1,7 +1,7 @@
 export namespace globals {
   export const yourName = 'Matthew Nolan';
-  export const siteName = `Matthew Nolan`;
-  export const siteDescription = "I write about code 'n stuff";
+  export const siteName = `Matthew Nolan Blog`;
+  export const siteDescription = "Matthew Nolan Blog";
   export const siteCreationDate = 'October 1, 2020 04:00:00 GMT';
   export const twitterHandle = '@ImMatthewNolan';
   export const email = `support@menlo.one`;

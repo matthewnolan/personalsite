@@ -4,6 +4,7 @@ import glob from 'glob';
 import { BlogPost } from '../../components/BlogPost';
 import { loadPost } from '../../loader';
 
+
 function Post(props: any) {
   const { post } = props;
   return <BlogPost post={post} />;

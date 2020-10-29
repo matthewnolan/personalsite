@@ -1,3 +1,0 @@
-## Hi I'm Matt
-
-**This is my intro text.**: Using Next.js dynamic imports...

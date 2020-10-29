@@ -2,6 +2,7 @@ import Head from 'next/head';
 import React from 'react';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
+
 import { globals } from '../globals';
 
 import './global.css';
@@ -31,6 +32,20 @@ const App: React.FC = ({ Component, pageProps }: any) => {
             }}
           ></script>
         )}
+
+        <meta name="description" content="Matthew Nolan Blog. Entrepreneur, Engineer, Artist." />
+        <meta name="robots" content="index, follow" />
+        <meta name="url" content="https://matthewnolan.xyz" />
+        <meta name="identifier-URL" content="https://matthewnolan.xyz" />
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@ImMatthewNolan" />
+        <meta name="twitter:title" content="Matthew Nolan Blog" />
+        <meta name="twitter:description" content="Matthew Nolan Blog" />
+        <meta name="twitter:creator" content="@ImMatthewNolan" />
+        <meta name="twitter:url" content="http://matthewnolan.xyz" />
+
+
 
         <link rel="icon" href="/favicon.ico" />
 

@@ -87,6 +87,7 @@ export const AuthorLines: React.FC<{ post: PostData }> = (props) => {
               // fontSize: '110%',
             }}
             href={`https://twitter.com/${props.post.authorTwitter}`}
+            target="_blank"
           >{`@${props.post.authorTwitter}`}</a>
         )}
       </p>

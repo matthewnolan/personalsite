@@ -1,12 +1,10 @@
 import React from 'react';
-import { globals } from '../globals';
 import Link from 'next/link';
-// import '../../global.css';
 
+import { globals } from '../globals';
 
 export const Header: React.FC = () => (
-
-      <nav className="navbar navbar-expand-sm navbar-light -bg-light">
+      <nav className="navbar navbar-expand-sm navbar-light">
 
         <Link href={`/`}><a className="navbar-brand">{globals.siteName}</a></Link>
 
@@ -31,5 +29,4 @@ export const Header: React.FC = () => (
         </div>
 
       </nav>
-
 );

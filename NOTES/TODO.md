@@ -1,6 +1,6 @@
 - add cool source code text
 
-- remove vriad.com from code
+- remove matthewnolan.xyz from code
 - remove blog template
 - revise test for twittercare and meta tags
 

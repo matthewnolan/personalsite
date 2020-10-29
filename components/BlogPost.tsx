@@ -1,9 +1,11 @@
 import React from 'react';
+import Link from 'next/link';
 
 import { Markdown } from './Markdown';
 import { PostData } from '../loader';
 import { PostMeta } from './PostMeta';
 import { Author } from './Author';
+
 
 export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
   post,
@@ -72,13 +74,15 @@ export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
               margin: '25px 0px',
             }}
           />
-
           <Author post={post} />
+
         </div>
 
         <div style={{ width: '100%', padding: '0px 0px' }}>
           <Markdown source={post.content} />
+          <br /><h5><Link href="/">Back</Link></h5>
         </div>
+
       </div>
     </div>
   );
