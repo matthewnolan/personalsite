@@ -24,8 +24,8 @@ const Home = (props: {
       >
         <div className="text-center basicHeadline">
           <img className="rounded-circle img-thumbnail" src="/images/matthew-nolan-thumbnail.jpg" alt="Matthew Nolan" style={{ maxWidth: '80px', margin: '1em' }} />
-          <h4 className="">Hi I'm Matthew Nolan</h4>
-          <h6 className="">Entrepreneur, Engineer, Artist</h6>
+          <h1 className="h4">Hi I'm Matthew Nolan</h1>
+          <h2 className="h6">Entrepreneur, Engineer, Artist</h2>
         </div>
         <div className="basicHeadline">
           <p className="text-center">
@@ -57,7 +57,7 @@ const Home = (props: {
 
 
       <section>
-        <h4 className="text-center">Featured In</h4>
+        <h3 className="text-center h4">Featured In</h3>
         <div className="mediaLogos">
             <div className="mediaLogos-wrapper">
 
@@ -113,7 +113,7 @@ const Home = (props: {
 
 
       <section className="hidden">
-        <h5 className="text-center">Recent Posts</h5>
+        <h3 className="text-center">Recent Posts</h3>
         <div className="list-group">
           <div
             style={{
