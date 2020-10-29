@@ -1,5 +1,8 @@
 - add cool source code text
-- check that fontawesome works
+
+- remove vriad.com from code
+- remove blog template
+- revise test for twittercare and meta tags
 
 
 Add contact page with social media, telegram, etc etc, eth address, etc

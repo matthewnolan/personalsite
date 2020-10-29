@@ -1,13 +1,12 @@
 import React from 'react';
 import { globals } from '../globals';
 import Link from 'next/link';
-
 // import '../../global.css';
 
 
 export const Header: React.FC = () => (
 
-      <nav className="navbar navbar-expand-sm navbar-light bg-light">
+      <nav className="navbar navbar-expand-sm navbar-light -bg-light">
 
         <Link href={`/`}><a className="navbar-brand">{globals.siteName}</a></Link>
 
@@ -25,9 +24,8 @@ export const Header: React.FC = () => (
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" target="_blank" href="https://twitter.com/ImMatthewNolan"><i class="fa fa-twitter fa-1x"></i></a>
+              <a className="nav-link" target="_blank" href="https://twitter.com/ImMatthewNolan"><i className="fa fa-twitter fa-1x"></i></a>
             </li>
-
 
           </ul>
         </div>

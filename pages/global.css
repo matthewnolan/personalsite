@@ -29,6 +29,12 @@ section p {
   text-justify: inter-word;
 }
 
+.navbar-light {
+  /*border-bottom:1px solid #373a3c;*/
+  border-bottom:1px solid #373a3c9c;
+  /*border-bottom:1px solid #f8f9fa;*/
+}
+
 
 /*Links on home*/
 .list-group-item {

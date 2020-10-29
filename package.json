@@ -1,17 +1,17 @@
 {
-  "name": "devii",
+  "name": "matthewnolanpersonal",
   "version": "0.5.0",
-  "description": "A Medium inspired dev blog starter for Next.js",
+  "description": "Matthew Nolans Personal Site",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vriad/devii"
+    "url": "https://github.com/matthewnolan"
   },
-  "author": "Colin McDonnell <colin@vriad.com>",
+  "author": "Matthew Nolan <support@menlo.one>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vriad/devii/issues"
+    "url": "https://github.com/matthewnolan"
   },
-  "homepage": "https://github.com/vriad/devii",
+  "homepage": "https://github.com/matthewnolan",
   "tags": [
     "blog template",
     "react",
