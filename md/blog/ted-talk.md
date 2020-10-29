@@ -24,3 +24,5 @@ I’m very honored and humbled to have been accepted into the Spring 2017 TED Re
 [Link to my TED talk on YouTube](https://youtu.be/M-SE6Fm6PGU)
 
 [Link to my TED talk on TED](https://www.ted.com/talks/matthew_nolan_world_peace_one_swipe_at_a_time)
+
+[Link to my TED profile](https://www.ted.com/profiles/2943657)
