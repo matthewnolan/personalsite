@@ -14,7 +14,7 @@ const Home = (props: {
     <div>
 
       <Head>
-        <title>Matthew Nolan</title>
+        <title>Matthew Nolan Blog</title>
       </Head>
 
       <section

@@ -37,6 +37,7 @@ const App: React.FC = ({ Component, pageProps }: any) => {
         <meta name="robots" content="index, follow" />
         <meta name="url" content="https://matthewnolan.xyz" />
         <meta name="identifier-URL" content="https://matthewnolan.xyz" />
+        <meta http-equiv="content-language" content="en" />
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@ImMatthewNolan" />
