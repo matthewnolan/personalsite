@@ -34,6 +34,9 @@ https://cssgradient.io/gradient-backgrounds/
 --- JUST DO A SIMPLE MINIMAL BACKGROND LKE HERE
 https://www.pinterest.com/pin/822610688162692008/
 
+https://hu.pinterest.com/pin/533887730820443057/
+
+
 
 matt@track.one
 

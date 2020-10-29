@@ -44,6 +44,7 @@ const App: React.FC = ({ Component, pageProps }: any) => {
         <meta name="twitter:description" content="Matthew Nolan Blog" />
         <meta name="twitter:creator" content="@ImMatthewNolan" />
         <meta name="twitter:url" content="http://matthewnolan.xyz" />
+        <meta name="twitter:image" content="https://matthewnolan.xyz/images/matthew-nolan-thumbnail.jpg" />
 
 
 
