@@ -45,6 +45,7 @@ export const Author: React.FC<{ post: PostData }> = (props) => {
         {props.post.authorPhoto && (
           <img
             src={props.post.authorPhoto}
+            alt={props.post.author}
             style={{
               width: '70px',
               height: '70px',
