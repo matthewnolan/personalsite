@@ -21,6 +21,9 @@ https://vriad.com/essays/devii
 https://www.epochconverter.com/
 
 
+# Play with
+https://github.com/jstejada/react-typist
+https://github.com/jscottsmith/react-scroll-parallax
 
 
 # DNS
