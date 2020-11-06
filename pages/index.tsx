@@ -27,17 +27,22 @@ const Home = (props: {
           <h1 className="h4">Hi I'm Matthew Nolan</h1>
           <h2 className="h6">Entrepreneur, Engineer, Artist</h2>
         </div>
+
         <div className="basicHeadline">
           <p className="text-center">
             <a href="https://twitter.com/ImMatthewNolan" target="_blank" className="btn btn-link">Twitter</a>
-            <a href="https://www.instagram.com/messyphone/" target="_blank" className="btn btn-link">Instagram</a>
             <a href="http://www.linkedin.com/in/buildbuildbuild/" target="_blank" className="btn btn-link">LinkedIn</a>
             <a href="https://github.com/matthewnolan" target="_blank" className="btn btn-link">Github</a>
             <a href="https://angel.co/u/matthew-nolan" target="_blank" className="btn btn-link">Angel List</a>
+            <a href="https://www.menlo.one" target="_blank" className="btn btn-link">Menlo One</a>
           </p>
         </div>
 
-        <div className="lead">
+        <div className="lead"
+          style={{
+            marginTop: '2em'
+          }}
+        >
           <p>
           Hi I'm Matthew Nolan, an entrepreneur, engineer, and artist. I build tech that makes the world more open and fun. I'm a <Link href={`/blog/ted-talk/`}>TED Resident alum</Link> and public speaker on the intersection of society, technology, and culture.
           </p><p>

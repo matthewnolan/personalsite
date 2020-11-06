@@ -35,10 +35,22 @@ section p {
   /*border-bottom:1px solid #f8f9fa;*/
 }
 
+.navbar-brand img {
+  max-height: 20px;
+}
+
 
 /*Links on home*/
 .list-group-item {
   border:0;
+}
+
+.homeBtn {
+  padding-left:0;
+}
+
+.homeBtn i {
+  margin-right: 0.2em;
 }
 
 
@@ -82,10 +94,10 @@ section p {
 
 /*--- GLOBAL ANIMATION UTILITIES ---*/
 
-a * {
+.mediaLogos a * {
     transition: .2s opacity linear;
 }
-a:hover * {
+.mediaLogos a:hover * {
     opacity: .4;
 }
 

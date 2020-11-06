@@ -43,14 +43,30 @@ Spotlight: Menlo One - The Framework for Scaling Decentralized Applications - hy
 https://youtu.be/CxPY-Xgz0yw
 
 
+
 Menlo One - Hottest new crypto? Interview w/ Bravado   (good)
 https://youtu.be/hMmzgv1igiM
+
+
+Menlo One | Matthew Nolan | Co-Founder and CEO | CoinAgenda Caribbean Conference
+https://www.youtube.com/watch?v=9Am6GI45fjE&ab_channel=BGN-BlockchainGlobalNews
+
+Menlo one - CEO Matthew Nolan Interview With Dushan Spalevich for ICO TV
+https://www.youtube.com/watch?v=HFxQkkDOtuY&ab_channel=iBlockTV
+
+Block. News
+https://block.news/makers/matthew-nolan/
+https://www.youtube.com/watch?v=WBq6FZp1o1U&feature=emb_title
+
+https://www.youtube.com/watch?v=61Hr9PPaZKo&feature=youtu.be&ab_channel=LIMINALMEDIA
+
 
 
 
 
 --- Inspiration
 
+http://joegebbia.com/about
 http://www.garysheng.com/
 https://www.mattangriffel.com/
 http://www.cesarkuriyama.com/

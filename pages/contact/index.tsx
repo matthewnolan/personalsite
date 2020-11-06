@@ -14,11 +14,11 @@ const Contact = () => {
         <h4 className="basicHeadline text-center">Contact Matthew</h4>
         <p className="text-center">The best way to contact Matthew is to send a DM on his <a target="_blank" href="https://twitter.com/ImMatthewNolan">Twitter</a>.
           <br /><br />
-          <Link href={`/`}>Home</Link>
         </p>
       </section>      
 
       <section>
+        <Link href={`/`}><a className="btn btn-lg btn-link homeBtn"><i className="fa fa-arrow-circle-left fa-1x"></i>Home</a></Link>
       </section>
 
 
