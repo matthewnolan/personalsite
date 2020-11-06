@@ -25,6 +25,8 @@ https://www.epochconverter.com/
 https://github.com/jstejada/react-typist
 https://github.com/jscottsmith/react-scroll-parallax
 
+# Play w GFX
+https://www.pinterest.com/pin/765119424170551781/
 
 # DNS
 

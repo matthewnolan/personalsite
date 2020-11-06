@@ -1,8 +1,5 @@
 - add cool source code text
 
-- remove matthewnolan.xyz from code
-- remove blog template
-- revise test for twittercare and meta tags
 
 
 Add contact page with social media, telegram, etc etc, eth address, etc
@@ -16,12 +13,31 @@ Best way to contact me:
 - email me at matt@menlo
 
 
------ABOUT
+----------------------ABOUT
 
 - List of things Ive done in no particular order
 
 
 - Various media about me
+
+Menlo One Blockumentary: Puerto Rico Blockchain Week
+https://youtu.be/mZ3eOQ9ysQs
+
+Menlo One Presents at CoinAgenda Singapore 2018!
+https://youtu.be/V6Ycg_9Q9w4
+
+Matthew Nolan - Menlo One and Blockchain Freedom in VR Japan
+https://youtu.be/61Hr9PPaZKo
+
+Improving Blockchain Usability with Menlo One (BTC Center Korea)
+https://youtu.be/6hDZQhnF-yQ
+
+Spotlight: Menlo One - The Framework for Scaling Decentralized Applications - hyprid summit
+https://youtu.be/CxPY-Xgz0yw
+
+
+Menlo One - Hottest new crypto? Interview w/ Bravado   (good)
+https://youtu.be/hMmzgv1igiM
 
 
 
