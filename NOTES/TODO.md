@@ -12,6 +12,13 @@ Best way to contact me:
 - DM me on Twitter
 - email me at matt@menlo
 
+- PGP key
+
+
+----------------------SPEAKING GIGS
+https://theblockchainday.com/team-member/matthew-nolan/
+
+
 
 ----------------------ABOUT
 
@@ -38,6 +45,16 @@ https://youtu.be/CxPY-Xgz0yw
 
 Menlo One - Hottest new crypto? Interview w/ Bravado   (good)
 https://youtu.be/hMmzgv1igiM
+
+
+
+
+--- Inspiration
+
+http://www.garysheng.com/
+https://www.mattangriffel.com/
+http://www.cesarkuriyama.com/
+https://nickgray.net/
 
 
 

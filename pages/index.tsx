@@ -30,6 +30,7 @@ const Home = (props: {
         <div className="basicHeadline">
           <p className="text-center">
             <a href="https://twitter.com/ImMatthewNolan" target="_blank" className="btn btn-link">Twitter</a>
+            <a href="https://www.instagram.com/messyphone/" target="_blank" className="btn btn-link">Instagram</a>
             <a href="http://www.linkedin.com/in/buildbuildbuild/" target="_blank" className="btn btn-link">LinkedIn</a>
             <a href="https://github.com/matthewnolan" target="_blank" className="btn btn-link">Github</a>
             <a href="https://angel.co/u/matthew-nolan" target="_blank" className="btn btn-link">Angel List</a>
@@ -42,7 +43,7 @@ const Home = (props: {
           </p><p>
           My belief is the Internet can do more than show us the world, it can help us to re-think it. I previously founded <a href="https://www.getverona.com/" target="_blank">Verona</a>, an app that connects people across social and political divides, allowing people to form friendships they never thought were possible. At the dawn of the virtual work movement I co-founded Speek, a meeting and collaboration platform that made it easier for teams to work together. I also previously worked at IBM where I developed tools to better understand how people use social media.
           </p><p>
-          I've done a lot of work in the digitization of value. I've worked at "traditional" financial institutions like JP Morgan. I've also been focused on blockchain technology which I've been involved in since it's early days. I'm currently the founder and CEO of <a href="https://menlo.one/" target="_blank">Menlo One</a>, a blockchain technology company that makes it easy to build products that are secure, transparent, and censorship resistant. 
+          I've done a lot of work in the digitization of value. I've worked at financial institutions like JP Morgan. I've also been focused on blockchain technology which I've been involved in since it's early days. I'm currently the founder and CEO of <a href="https://menlo.one/" target="_blank">Menlo One</a>, a blockchain technology company that makes it easy to build products that are secure, transparent, and censorship resistant. 
           </p>
         </div>
       </section>
