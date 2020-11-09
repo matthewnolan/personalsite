@@ -69,7 +69,7 @@ const Home = (props: {
 
 <a target="_blank" className="menloLogos" href="https://www.forbes.com/sites/andrewrossow/2018/07/10/top-10-new-blockchain-companies-to-watch-for-in-2018">
   <img src="/images/logos/logo-forbes.svg" alt="Matthew Nolan in Forbes" /></a>
-<a target="_blank" className="menloLogos" href="https://bit.ly/2HXdoPw">
+<a target="_blank" className="menloLogos" href="https://venturebeat.com/2018/04/26/menlo-one-launches-townhall-to-reward-users-for-sharing-token-sale-news/">
   <img src="/images/logos/logo-venturebeat.svg" alt="VentureBeat Blockchain media article about the decentralized menlo one blockchain framework" /></a>
 <a target="_blank" className="menloLogos" href="https://www.inc.com/melanie-curtin/the-problem-with-blockchain-that-no-ones-talking-about.html">
   <img src="/images/logos/logo-inc.png" alt="Inc Magazine Blockchain media article about the decentralized menlo one blockchain framework" /></a>
