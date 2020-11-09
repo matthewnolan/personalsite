@@ -19,7 +19,7 @@ const Contact = () => {
 <section>
 
   <ul>
-    <li>Email - the bext way to contact me: <b>matthew at menlo dot one</b></li>
+    <li>Email - the best way to contact me: <b>matthew at menlo dot one</b></li>
     <li>Keybase: <a target="_blank" href="https://keybase.io/matthewnolan">matthewnolan</a></li>
     <li>Twitter: <a target="_blank" href="https://twitter.com/ImMatthewNolan">@ImMatthewNolan</a></li>
     <br />
