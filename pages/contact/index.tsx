@@ -10,25 +10,36 @@ const Contact = () => {
         <title>Contact Matthew Nolan</title>
       </Head>
 
-      <section>
-        <h4 className="basicHeadline text-center">Contact Matthew</h4>
-        <p className="text-center">The best way to contact Matthew is to send a DM on his <a target="_blank" href="https://twitter.com/ImMatthewNolan">Twitter</a>.
-          <br /><br />
 
-          Email: matthew @ menlo dot one
-          Twitter: DMs always welcome
-          <strike>Telegram</strike>: too full of spam
-          <strike>LinkedIn</strike>: too full of spam
+<section>
+  <div className="text-center basicHeadline">
+    <h1 className="h3">Contact Matthew</h1>
+  </div>
+</section>
+<section>
+
+  <ul>
+    <li>Email - the bext way to contact me: <b>matthew at menlo dot one</b></li>
+    <li>Keybase: <a target="_blank" href="https://keybase.io/matthewnolan">matthewnolan</a></li>
+    <li>Twitter: <a target="_blank" href="https://twitter.com/ImMatthewNolan">@ImMatthewNolan</a></li>
+    <br />
+    <li><del>Telegram</del>: too full of spam</li>
+    <li><del>LinkedIn</del>: too full of spam</li>
+  </ul>
+
+</section>
+
+<section>
+  <h2 className="h4">Other</h2>
+  <ul>
+    <li>ENS Address: <a target="_blank" href="https://matthewnolan.eth">matthewnolan.eth</a></li>
+    <li>END Address points here: <a target="_blank" href="https://etherscan.io/address/0x2a406639ad1a4b5d7ecbdeaaff10539097347076">0x2a406639ad1a4b5d7ecbdeaaff10539097347076</a></li>
+  </ul>
+</section>
 
 
-          OTHER
-
-          An ETH address for me: 
-          My ETH domain:
-          PGP
-          Keybase
-        </p>
-      </section>      
+          
+    
 
       <section>
         <Link href={`/`}><a className="btn btn-lg btn-link homeBtn"><i className="fa fa-arrow-circle-left fa-1x"></i>Home</a></Link>
