@@ -20,11 +20,13 @@ const Contact = () => {
           <strike>Telegram</strike>: too full of spam
           <strike>LinkedIn</strike>: too full of spam
 
+
           OTHER
 
           An ETH address for me: 
           My ETH domain:
           PGP
+          Keybase
         </p>
       </section>      
 
