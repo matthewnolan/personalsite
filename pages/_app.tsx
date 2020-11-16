@@ -37,17 +37,18 @@ const App: React.FC = ({ Component, pageProps }: any) => {
 
         <meta name="keywords" content="Matthew Nolan, blockchain, app, Verona, Menlo One" />
 
+        <meta httpEquiv="content-language" content="en" />
+
+
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Matthew Nolan" />
         <meta name="url" content="https://matthewnolan.xyz" />
         <meta name="identifier-URL" content="https://matthewnolan.xyz" />
 
-        <meta http-equiv="content-language" content="en" />
-
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@ImMatthewNolan" />
         <meta name="twitter:title" content="Matthew Nolan Blog" />
-        <meta name="twitter:description" content="Matthew Nolan. Entrepreneur, Engineer, Artist." />
+        <meta name="twitter:description" content="Matthew Nolan. Entrepreneur, Engineer, Investor, Artist." />
         <meta name="twitter:creator" content="@ImMatthewNolan" />
         <meta name="twitter:url" content="https://matthewnolan.xyz" />
         <meta name="twitter:image" content="https://matthewnolan.xyz/images/matthew-nolan-thumbnail.jpg" />

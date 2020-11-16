@@ -14,7 +14,7 @@ const Home = (props: {
     <div>
 
       <Head>
-        <title>Matthew Nolan | Entrepreneur, Engineer, Artist</title>
+        <title>Matthew Nolan | Entrepreneur, Engineer, Investor, Artist</title>
       </Head>
 
       <section
@@ -25,7 +25,7 @@ const Home = (props: {
         <div className="text-center basicHeadline">
           <img className="rounded-circle img-thumbnail" src="/images/matthew-nolan-thumbnail.jpg" alt="Matthew Nolan" style={{ maxWidth: '80px', margin: '1em' }} />
           <h1 className="h4">Hi I'm Matthew Nolan</h1>
-          <h2 className="h6">Entrepreneur, Engineer, Artist. Founder of <a href="https://www.menlo.one" target="_blank">Menlo One</a></h2>
+          <h2 className="h6">Entrepreneur, Engineer, Investor, Artist. Founder of <a href="https://www.menlo.one" target="_blank">Menlo One</a></h2>
         </div>
 
         <div className="basicHeadline">
