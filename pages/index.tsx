@@ -23,7 +23,9 @@ const Home = (props: {
         }}
       >
         <div className="text-center basicHeadline">
-          <img className="rounded-circle img-thumbnail" src="/images/matthew-nolan-thumbnail.jpg" alt="Matthew Nolan" style={{ maxWidth: '80px', margin: '1em' }} />
+          <img className="rounded-circle img-thumbnail" src="/images/matthew-nolan-thumbnail.jpg" alt="Matthew Nolan" 
+            style={{ maxWidth: '80px', maxHeight: '80px', margin: '1em' }} 
+          />
           <h1 className="h4">Hi I'm Matthew Nolan</h1>
           <h2 className="h6">Entrepreneur, Engineer, Investor, Artist. Founder of <a href="https://www.menlo.one" target="_blank">Menlo One</a></h2>
         </div>
@@ -44,7 +46,7 @@ const Home = (props: {
           }}
         >
           <p>
-          Hi I'm Matthew Nolan, an entrepreneur, engineer, and artist. I build tech that makes the world more open and fun. I'm a <Link href={`/blog/ted-talk/`}>TED Resident alum</Link> and public speaker on the intersection of society, technology, and culture.
+          Hi I'm Matthew Nolan, an entrepreneur, engineer, investor, &amp; artist. I build tech that makes the world more open and fun. I'm a <Link href={`/blog/ted-talk/`}>TED Resident alum</Link> and public speaker on the intersection of society, technology, and culture.
           </p><p>
           My belief is the Internet can do more than show us the world, it can help us to re-think it. I previously founded <a href="https://www.getverona.com/" target="_blank">Verona</a>, an app that connects people across social and political divides, allowing people to form friendships they never thought were possible. At the dawn of the virtual work movement I co-founded Speek, a meeting and collaboration platform that made it easier for teams to work together. I also previously worked at IBM where I developed tools to better understand how people use social media.
           </p><p>

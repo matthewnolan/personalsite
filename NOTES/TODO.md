@@ -17,12 +17,6 @@ Best way to contact me:
 
 ----------------------ADD THIS
 
-  <img src="/images/matthew-nolan-app-blockchain-speaker.png" 
-    style={{
-      maxWidth: '200px',
-      display: "inline-block"
-    }}
-  />
 
 
 ----------------------ABOUT
