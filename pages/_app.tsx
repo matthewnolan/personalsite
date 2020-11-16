@@ -72,7 +72,7 @@ const App: React.FC = ({ Component, pageProps }: any) => {
 
       <div className="container">
         <div className="row justify-content-sm-center">
-          <div className="col col-sm-8">
+          <div className="col col-sm-10">
             <Component {...pageProps} />
           </div> { /*e col col-sm-8 */ }
         </div> { /*e row justify-content-sm-center */ }

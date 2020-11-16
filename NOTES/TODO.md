@@ -15,9 +15,14 @@ Best way to contact me:
 - PGP key
 
 
-----------------------SPEAKING GIGS
-https://theblockchainday.com/team-member/matthew-nolan/
+----------------------ADD THIS
 
+  <img src="/images/matthew-nolan-app-blockchain-speaker.png" 
+    style={{
+      maxWidth: '200px',
+      display: "inline-block"
+    }}
+  />
 
 
 ----------------------ABOUT

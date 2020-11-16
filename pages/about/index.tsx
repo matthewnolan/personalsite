@@ -10,6 +10,8 @@ const About = () => {
         <title>About Matthew Nolan</title>
       </Head>
 
+
+
 <section>
   <div className="text-center basicHeadline">
     <h1 className="h3">About Matthew Nolan</h1>
@@ -18,16 +20,8 @@ const About = () => {
 </section>
 
 <section className="-hidden">
-  <h2 className="h4">Awards &amp; Honors</h2>
-  <ul>
-    <li><a href="http://www.webbyawards.com/winners/2016/mobile-sites-apps/general-sites-apps/social/verona/" target="_blank">The Webby Awards - 2016 Official Honoree</a></li>
-
-    <li><a href="http://www.fastcompany.com/company/verona" target="_blank">Fast Company - 2016 Most Innovative Companies</a></li>
-  </ul>
-</section>
-
-<section className="-hidden">
   <h2 className="h4">Speaking Engagements</h2>
+
   <ul>
     <li><a href="https://www.ted.com/talks/matthew_nolan_world_peace_one_swipe_at_a_time" target="_blank">
     TED: World Peace, one swipe at a time, New York City 
@@ -53,6 +47,16 @@ const About = () => {
 
   </ul>
 </section>
+
+<section className="-hidden">
+  <h2 className="h4">Awards &amp; Honors</h2>
+  <ul>
+    <li><a href="http://www.webbyawards.com/winners/2016/mobile-sites-apps/general-sites-apps/social/verona/" target="_blank">The Webby Awards - 2016 Official Honoree</a></li>
+
+    <li><a href="http://www.fastcompany.com/company/verona" target="_blank">Fast Company - 2016 Most Innovative Companies</a></li>
+  </ul>
+</section>
+
 
 <section className="-hidden">
   <h2 className="h4">Interviews</h2>
