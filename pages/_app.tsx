@@ -33,7 +33,7 @@ const App: React.FC = ({ Component, pageProps }: any) => {
           ></script>
         )}
 
-        <meta name="description" content="Hi I'm Matthew Nolan, an entrepreneur, engineer, and artist. I build tech that makes the world more open and fun." />
+        <meta name="description" content="Hi I'm Matthew Nolan, an entrepreneur, engineer, and investor. I build tech that makes the world more open and fun." />
 
         <meta name="keywords" content="Matthew Nolan, blockchain, app, Verona, Menlo One" />
 
@@ -48,7 +48,7 @@ const App: React.FC = ({ Component, pageProps }: any) => {
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@ImMatthewNolan" />
         <meta name="twitter:title" content="Matthew Nolan Blog" />
-        <meta name="twitter:description" content="Matthew Nolan. Entrepreneur, Engineer, Investor, Artist." />
+        <meta name="twitter:description" content="Matthew Nolan. Entrepreneur, Engineer, Investor." />
         <meta name="twitter:creator" content="@ImMatthewNolan" />
         <meta name="twitter:url" content="https://matthewnolan.xyz" />
         <meta name="twitter:image" content="https://matthewnolan.xyz/images/matthew-nolan-thumbnail.jpg" />
@@ -60,8 +60,6 @@ const App: React.FC = ({ Component, pageProps }: any) => {
 
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
-
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css" />
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" />
 
