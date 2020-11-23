@@ -49,9 +49,9 @@ const About = () => {
         Token Sky, Tokyo 
         </a></li>
 
-        <li>
+        <li><a href="https://coinagenda.com/" target="_blank">
         Coin Agenda, Singapore 
-        </li>
+        </a></li>
 
         <li><a href="https://youtu.be/CxPY-Xgz0yw" target="_blank">
         Hybrid Summit, Bangkok 
