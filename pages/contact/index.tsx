@@ -28,7 +28,7 @@ const Contact = () => {
 <section>
   <ul>
     <li>ENS Address: <a target="_blank" href="https://matthewnolan.eth">matthewnolan.eth</a></li>
-    <li>END Address points here: <a target="_blank" href="https://etherscan.io/address/0x2a406639ad1a4b5d7ecbdeaaff10539097347076">0x2a406639ad1a4b5d7ecbdeaaff10539097347076</a></li>
+    <li>ENS Address points here: <a target="_blank" href="https://etherscan.io/address/0x2a406639ad1a4b5d7ecbdeaaff10539097347076">0x2a406639ad1a4b5d7ecbdeaaff10539097347076</a></li>
   </ul>
 </section>
 
