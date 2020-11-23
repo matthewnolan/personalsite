@@ -3,7 +3,7 @@ import React from 'react';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 
-import { globals } from '../globals';
+// import { globals } from '../globals';
 
 import './global.css';
 
@@ -13,32 +13,12 @@ const App: React.FC = ({ Component, pageProps }: any) => {
     <div>
 
       <Head>
-        {globals.googleAnalyticsId && (
-          <script
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=${globals.googleAnalyticsId}`}
-          ></script>
-        )}
-        {globals.googleAnalyticsId && (
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('globals', '${globals.googleAnalyticsId}');
-            `,
-            }}
-          ></script>
-        )}
 
         <meta name="description" content="Hi I'm Matthew Nolan, an entrepreneur, engineer, and investor. I build tech that makes the world more open and fun." />
 
         <meta name="keywords" content="Matthew Nolan, blockchain, app, Verona, Menlo One" />
 
         <meta httpEquiv="content-language" content="en" />
-
 
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Matthew Nolan" />
@@ -53,16 +33,14 @@ const App: React.FC = ({ Component, pageProps }: any) => {
         <meta name="twitter:url" content="https://matthewnolan.xyz" />
         <meta name="twitter:image" content="https://matthewnolan.xyz/images/matthew-nolan-thumbnail.jpg" />
 
-        <link rel="canonical" href="https://matthewnolan.xyz/" />
+        <link rel="canonical" href="https://matthewnolan.xyz" />
 
         <link rel="icon" href="/favicon.ico" />
-
 
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" />
-
 
       </Head>
 
