@@ -71,7 +71,7 @@ const Home = (props: {
           <img className="rounded-circle img-thumbnail" src="/images/matthew-nolan-thumbnail.jpg" alt="Matthew Nolan" 
             style={{ maxWidth: '80px', maxHeight: '80px', margin: '1em' }} 
           />
-          <h1 className="h4">Hi I'm Matthew Nolan</h1>
+          <h1 className="h4">I'm Matthew Nolan</h1>
           <h2 className="h6">Entrepreneur, Engineer, Investor. Founder of <a href="https://www.menlo.one" target="_blank">Menlo One</a></h2>
         </div>
 
@@ -330,6 +330,15 @@ function HomeMM() {
           </>
         ) : null}
 
+      {/* <div
+        className="row disconnect-button"
+        onClick={() => {
+          setLatestOp(W3Operations.Disconnect);
+          web3React.deactivate();
+        }}
+      >
+        Sign
+      </div> */}
 
         <style jsx>{`
           .container {
