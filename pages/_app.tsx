@@ -1,14 +1,18 @@
 import Head from 'next/head';
 import React from 'react';
 import { Header } from '../components/Header';
+import { Sidebar } from '../components/Sidebar';
 import { Footer } from '../components/Footer';
 
 // import { globals } from '../globals';
 
 import './global.css';
 
-
 const App: React.FC = ({ Component, pageProps }: any) => {
+
+  const message = "this messaghe";
+  
+
   return (
     <div>
 
@@ -16,7 +20,7 @@ const App: React.FC = ({ Component, pageProps }: any) => {
 
         <meta name="description" content="Hi I'm Matthew Nolan, an entrepreneur, engineer, and investor. I build tech that makes the world more open and fun." />
 
-        <meta name="keywords" content="Matthew Nolan, blockchain, app, Verona, Menlo One" />
+        <meta name="keywords" content="Matthew Nolan, blockchain, crypto, app, Verona, Menlo One" />
 
         <meta httpEquiv="content-language" content="en" />
 
@@ -46,11 +50,19 @@ const App: React.FC = ({ Component, pageProps }: any) => {
 
       <Header />
 
-      <div className="container">
-        <div className="row justify-content-sm-center">
-          <div className="col col-sm-10">
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-md-9 ml-md-auto">
             <Component {...pageProps} />
           </div> { /*e col col-sm-8 */ }
+
+          <div className="col-md-2 ml-md-auto" style={{backgroundColor:'red'}}>
+            Sidebvar
+            {message}
+            <Sidebar {...pageProps} />
+
+          </div> { /*e col col-sm-8 */ }
+
         </div> { /*e row justify-content-sm-center */ }
       </div> { /*e container */ }
 
@@ -84,3 +96,8 @@ const App: React.FC = ({ Component, pageProps }: any) => {
 };
 
 export default App;
+
+export const getStaticProps = async () => {
+  const posts = await loadBlogPosts();
+  return { props: { posts } };
+};
