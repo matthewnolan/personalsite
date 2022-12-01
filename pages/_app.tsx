@@ -1,10 +1,11 @@
 import Head from 'next/head';
 import React from 'react';
 import { Header } from '../components/Header';
-import { Sidebar } from '../components/Sidebar';
+// import { Sidebar } from '../components/Sidebar';
 import { Footer } from '../components/Footer';
+import { PostCardSide } from '../components/PostCardSide';
 
-import { PostData, loadBlogPosts } from '../loader';
+// import { PostData, loadBlogPosts } from '../loader';
 
 
 // import { globals } from '../globals';
@@ -13,6 +14,13 @@ import './global.css';
 
 
 const App: React.FC = ({ Component, pageProps }: any) => {
+  console.log(pageProps);
+
+  let allPosts = [];
+  if (!pageProps.hasOwnProperty('posts')) {
+    console.log("no has posts");
+  } else { allPosts = pageProps.posts; }
+
   return (
     <div>
 
@@ -58,8 +66,13 @@ const App: React.FC = ({ Component, pageProps }: any) => {
           </div> { /*e col col-sm-8 */ }
 
           <div className="col-md-3 ml-md-auto" style={{backgroundColor:'transparent'}}>
-            {<Sidebar {...pageProps} />}
+            {/*{<Sidebar {...pageProps} />}*/}
             {/*<Sidebar posts={posts} />*/}
+
+            {allPosts.map((post: any, j: any) => {
+              return <PostCardSide post={post} key={j} />;
+            })}
+
           </div> { /*e col col-sm-8 */ }
 
         </div> { /*e row justify-content-sm-center */ }

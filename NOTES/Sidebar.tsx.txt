@@ -1,14 +1,12 @@
 import React from 'react';
-import Link from 'next/link';
-
-// import { PostData, loadBlogPosts } from '../loader';
+import { PostData } from '../loader';
 import { PostCardSide } from '../components/PostCardSide';
 
-import { globals } from '../globals';
+export const Sidebar: React.FC<{ posts: PostData }> = (props) => {
+// export const Sidebar = (props: {
+  // posts: PostData[];
 
-export const Sidebar = (props: {
-  posts: PostData[];
-}) => {
+// }) => {
   console.log("SIDEBARR props ", props);
 
   return (
@@ -32,9 +30,9 @@ export const Sidebar = (props: {
             }}
           >
           <p>Posts</p>
-            {props.posts.map((post, j) => {
+{/*            {props.posts.map((post, j) => {
               return <PostCardSide post={post} key={j} />;
-            })}
+            })}*/}
           </div>
         </div>
 

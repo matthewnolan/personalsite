@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link'
+import { loadBlogPosts } from '../../loader';
 
 
 const Contact = () => {
@@ -45,3 +46,12 @@ const Contact = () => {
   );
 };
 export default Contact;
+
+
+
+export const getStaticProps = async () => {
+  // this has to go on every page now to make sidebar work
+  const posts = await loadBlogPosts();
+  const props = { posts };
+  return { props };
+};
