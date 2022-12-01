@@ -96,7 +96,7 @@ function HomeMM() {
 
   const getTruncatedAddress = (address: any) => {
     if (address && address.startsWith("0x")) {
-      return address.substr(0, 4) + "..." + address.substr(address.length - 4);
+      return address.substr(0, 6) + "..." + address.substr(address.length - 4);
     }
     return address;
   };
@@ -104,7 +104,7 @@ function HomeMM() {
   const getNetwork = (chainId: any) => {
     switch (chainId) {
       case 1:
-        return "Mainnet";
+        return "Ethereum Mainnet";
       case 3:
         return "Ropsten";
       case 4:
@@ -123,11 +123,11 @@ function HomeMM() {
 
       <button 
         type="button" 
-        className="btn btn-primary btn-wallet">
+        className="btn btn-outline-secondary disabled btn-wallet">
           {web3React.active ? (
               <div>{getNetwork(web3React.chainId)}</div>
           ) : (
-              <div>Ethereum</div>
+            <div className="hidden-text">Ethereum Mainnet</div>
           )}
       </button>
 
@@ -145,7 +145,7 @@ function HomeMM() {
           }
         }}
         type="button" 
-        className="btn btn-primary btn-wallet">
+        className="btn btn-outline-secondary btn-wallet">
           {web3React.active ? (
               <div>{getTruncatedAddress(web3React.account)}</div>
           ) : (
@@ -153,166 +153,6 @@ function HomeMM() {
           )}
       </button>
 
-
-      {!web3React.active ? (
-        <div className="connect-wallet-container">
-          <div className="connect-wallet-card">
-            <div
-              className="button metamask"
-              onClick={() => {
-                setLatestConnector(ConnectorNames.Injected);
-                setLatestOp(W3Operations.Connect);
-                web3React.activate(injected);
-              }}
-            >
-              Metamask
-              <MetamaskIcon />
-            </div>
-            {/* <div
-              className="button walletconnect"
-              onClick={() => {
-                setLatestConnector(ConnectorNames.WalletConnect);
-                setLatestOp(W3Operations.Connect);
-                web3React.activate(wcConnector);
-              }}
-            >
-              WalletConnect
-              <WalletConnectIcon />
-            </div> */}
-          </div>
-        </div>
-      ) : null}
-
-      {web3React.active ? (
-        <>
-          <div className="connected-container">
-            <div className="connected-card">
-              <div className="wallet-row network-section">
-                {/* <div className="row-title">Network</div> */}
-                <div className="row-subtitle">
-                  {getNetwork(web3React.chainId)}
-                </div>
-              </div>
-              <hr className="divider" />
-              <div className="row network-section">
-                <div className="row-title">Address</div>
-                <div className="row-subtitle">
-                  {getTruncatedAddress(web3React.account)}
-                </div>
-              </div>
-              <hr className="divider" />
-              <div
-                className="wallet-row disconnect-button"
-                onClick={() => {
-                  setLatestOp(W3Operations.Disconnect);
-                  web3React.deactivate();
-                }}
-              >
-                Disconnect
-              </div>
-            </div>
-          </div>
-        </>
-      ) : null}
-
-      <style jsx>{`
-
-          // .container {
-          //   // min-height: 100vh;
-          //   /* padding: 0 0.5rem; */
-          //   // display: flex;
-          //   // flex-direction: column;
-          //   // justify-content: center;
-          //   align-items: center;
-          //   /* height: 100vh; */
-          //   background-color: #fafafa;
-          // }
-          // .connect-wallet-container {
-          //   display: flex;
-          //   width: 400px;
-          //   height: 300px;
-          //   border-radius: 30px;
-          //   background: #ffffff;
-          //   justify-content: center;
-          //   align-items: center;
-          //   text-align: center;
-          //   box-shadow: rgb(0 0 0 / 10%) 0px 4px 20px;
-          // }
-          // .wallet-header {
-          //   font-size: 20px;
-          //   font-weight: 700;
-          //   margin-bottom: 30px;
-          // }
-          // .button {
-          //   // width: 300px;
-          //   height: 60px;
-          //   background: #ffffff;
-          //   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-          //   border-radius: 10px;
-          //   display: flex;
-          //   align-items: center;
-          //   justify-content: space-between;
-          //   padding: 0 25px;
-          //   margin: 20px auto;
-          // }
-          // .button:hover {
-          //   cursor: pointer;
-          // }
-          // .connected-container {
-          //   // display: flex;
-          //   /* margin: 20px auto; */
-          //   // width: 400px;
-          //   border-radius: 30px;
-          //   background: #ffffff;
-          //   box-shadow: rgb(0 0 0 / 10%) 0px 4px 20px;
-          // }
-          // .row {
-          //   display: flex;
-          //   flex-direction: column;
-          //   height: 80px;
-          //   width: 400px;
-          //   justify-content: center;
-          //   padding: 0 20px;
-          // }
-          // .row-title {
-          //   font-size: 16px;
-          //   color: #afafaf;
-          //   font-weight: 900;
-          // }
-          // .row-subtitle {
-          //   font-size: 22px;
-          //   font-weight: 700;
-          // }
-          // .disconnect-button {
-          //   align-items: center;
-          //   color: #f96666;
-          //   font-size: 20px;
-          //   font-weight: 900;
-          // }
-          // .disconnect-button:hover {
-          //   cursor: pointer;
-          // }
-          // .divider {
-          //   height: 0.1px;
-          //   background-color: #e5e5e5;
-          //   border: none;
-          //   margin: unset;
-          // }
-          // .github {
-          //   position: fixed;
-          //   bottom: 30px;
-          // }
-          // @media screen and (max-width: 400px) {
-          //   .connect-wallet-container {
-          //     width: 80%;    
-          //   }
-          //   .button {
-          //     width: 240px;
-          //   }
-          //   .connected-container, .row  {
-          //     width: 300px;
-          //   }
-        `}</style>
     </div>
   );
 }
