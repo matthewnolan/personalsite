@@ -2,8 +2,6 @@ import React from 'react';
 import glob from 'glob';
 
 import { BlogPost } from '../../components/BlogPost';
-// import { loadPost } from '../../loader';
-// import { loadPost, PostData, loadBlogPosts } from '../../loader';
 import { loadPost, loadBlogPosts } from '../../loader';
 
 
