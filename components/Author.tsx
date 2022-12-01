@@ -27,6 +27,7 @@ export const FollowButton = () => {
 };
 
 export const Author: React.FC<{ post: PostData }> = (props) => {
+  // console.log("Author props", props);
   return (
     <div
       style={{

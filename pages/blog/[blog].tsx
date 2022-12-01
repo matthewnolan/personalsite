@@ -2,7 +2,8 @@ import React from 'react';
 import glob from 'glob';
 
 import { BlogPost } from '../../components/BlogPost';
-import { loadPost } from '../../loader';
+// import { loadPost } from '../../loader';
+import { loadPost, PostData, loadBlogPosts } from '../../loader';
 
 
 function Post(props: any) {
@@ -24,7 +25,8 @@ export const getStaticPaths = () => {
 
 export const getStaticProps = async ({ params }: any) => {
   const post = await loadPost(`blog/${params.blog}.md`);
-  return { props: { post } };
+  const posts = await loadBlogPosts();
+  return { props: { post, posts } };
 };
 
 export default Post;

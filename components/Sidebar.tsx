@@ -3,18 +3,25 @@ import Link from 'next/link';
 
 import { PostData, loadBlogPosts } from '../loader';
 import { PostCardSide } from '../components/PostCardSide';
-import { generateRSS } from '../rssUtil';
 
 import { globals } from '../globals';
 
+
+// export const Sidebar: React.FC<{ posts: PostData }> = ({ posts }) => {
+
+
 export const Sidebar = (props: {
-  introduction: string;
-  readme: string;
   posts: PostData[];
 }) => {
-  // console.log(props);
+  console.log("SIDEBARR props ", props);
+  // const wtf = async () => {
+  //   const posts = await loadBlogPosts();
+  //   console.log("posrsss ", posts);
+  //   return { props: { posts } };
+  // };
+  // wtf();
+
   return (
-// export const Sidebar: React.FC = () => (
       <div className="">
         SIDEBARRRR
 
@@ -44,5 +51,13 @@ export const Sidebar = (props: {
     </div>
   );
 };
-export default Sidebar;
+// export default Sidebar;
+
+
+// can only use this in PAGES dir
+
+// export const getStaticProps = async () => {
+//   const posts = await loadBlogPosts();
+//   return { props: { posts } };
+// };
 

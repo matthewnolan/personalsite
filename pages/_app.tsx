@@ -4,9 +4,18 @@ import { Header } from '../components/Header';
 import { Sidebar } from '../components/Sidebar';
 import { Footer } from '../components/Footer';
 
+import { PostData, loadBlogPosts } from '../loader';
+
+
 // import { globals } from '../globals';
 
 import './global.css';
+
+
+// export const getStaticProps = async () => {
+//   const posts = await loadBlogPosts();
+//   return { props: { posts } };
+// };
 
 const App: React.FC = ({ Component, pageProps }: any) => {
   return (
@@ -48,13 +57,15 @@ const App: React.FC = ({ Component, pageProps }: any) => {
 
       <div className="container-fluid">
         <div className="row">
+
           <div className="col-md-9 ml-md-auto">
             <Component {...pageProps} />
           </div> { /*e col col-sm-8 */ }
 
           <div className="col-md-3 ml-md-auto" style={{backgroundColor:'red'}}>
-            Sidebvar
-            <Sidebar {...pageProps} />
+            Header Sidebar
+            {<Sidebar {...pageProps} />}
+            {/*<Sidebar posts={posts} />*/}
           </div> { /*e col col-sm-8 */ }
 
         </div> { /*e row justify-content-sm-center */ }
@@ -64,23 +75,7 @@ const App: React.FC = ({ Component, pageProps }: any) => {
       <Footer />
       <style jsx global>{`
         // reset.css
-
-        html,
-        body,
-        #__next {
-          min-height: 100%;
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-
-        .hidden {display:none !important;}
+        html {}
       `}</style>
 
       <div style={{ flex: 1 }} />
@@ -91,7 +86,3 @@ const App: React.FC = ({ Component, pageProps }: any) => {
 
 export default App;
 
-export const getStaticProps = async () => {
-  const posts = await loadBlogPosts();
-  return { props: { posts } };
-};
