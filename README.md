@@ -19,7 +19,11 @@ https://seositecheckup.com/seo-audit/matthewnolan.xyz
 https://github.com/vriad/devii
 https://devii.dev/
 https://vriad.com/essays/devii
+
+# Web3
 https://github.com/shivkanthb/web3-starter
+https://github.com/Uniswap/web3-react
+https://github.com/Uniswap/web3-react/tree/main/packages/example-next
 
 # Handy
 https://www.epochconverter.com/
