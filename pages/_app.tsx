@@ -59,20 +59,16 @@ const App: React.FC = ({ Component, pageProps }: any) => {
       <Header />
 
       <div className="container-fluid">
-        <div className="row">
+        <div className="row justify-content-md-center">
 
-          <div className="col-md-9 ml-md-auto">
+          <div className="col-md-9 col-lg-7 -col-md-6 ml-md-auto">
             <Component {...pageProps} />
           </div> { /*e col col-sm-8 */ }
 
           <div className="col-md-3 ml-md-auto" style={{backgroundColor:'transparent'}}>
-            {/*{<Sidebar {...pageProps} />}*/}
-            {/*<Sidebar posts={posts} />*/}
-
             {allPosts.map((post: any, j: any) => {
               return <PostCardSide post={post} key={j} />;
             })}
-
           </div> { /*e col col-sm-8 */ }
 
         </div> { /*e row justify-content-sm-center */ }

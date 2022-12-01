@@ -4,16 +4,13 @@
 // https://www.npmjs.com/package/nextjs-sitemap-generator
 // TODO, not working, come back
  
-const sitemap = require('nextjs-sitemap-generator');
+const sitemap = require('nom');
  
 sitemap({
   alternateUrls: {
-    en: 'https://example.en',
-    es: 'https://example.es',
-    ja: 'https://example.jp',
-    fr: 'https://example.fr',
+    en: 'https://matthewnolan.eth',
   },
-  baseUrl: 'https://example.com',
+  baseUrl: 'https://matthewnolan.xyz',
   ignoredPaths: ['admin'],
   extraPaths: ['/extraPath'],
   pagesDirectory: __dirname + "/pages",
