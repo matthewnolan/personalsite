@@ -14,11 +14,8 @@ const Home = (props: {
   posts: PostData[];
 }) => {
 
-  // const web3React = useWeb3React();
   // const blockchainInfo = function () {
   //   console.log("----SIGN it");
-  //   console.log(web3React);
-  //   web3React.signMessage()
   // }
 
   return (
@@ -40,7 +37,7 @@ const Home = (props: {
             style={{ maxWidth: '80px', maxHeight: '80px', margin: '1em' }} 
           />
           <h1 className="h4">I'm Matthew Nolan</h1>
-          <h2 className="h6">Entrepreneur, Engineer, Investor. Founder of <a href="https://www.menlo.one" target="_blank">Menlo One</a></h2>
+          <h2 className="h6">Entrepreneur | Engineer | Investor</h2>
         </div>
 
         <div className="basicHeadline">
@@ -59,15 +56,12 @@ const Home = (props: {
           }}
         >
           <p>
-          Hi I'm Matthew Nolan, an entrepreneur, engineer, &amp; investor. I build technology that makes the world more open and better connected. I'm a <Link href={`/blog/ted-talk/`}>TED Resident alum</Link> and public speaker on the intersection of society, technology, and culture.
+            Hi I'm Matthew Nolan. I build technology that makes the world more open and connected. I'm the founder of <a href="https://menlo.one/" target="_blank">Menlo One</a>, a blockchain technology company that creates tooling and products for DAOs, exchanges, protocols, and enterprises.
           </p><p>
-          I previously founded <a href="https://www.getverona.com/" target="_blank">Verona</a>, an app that connects people across social and political divides. At the dawn of the virtual work movement I co-founded Speek, a meeting and collaboration platform. I previously worked at IBM where I developed tools now used by millions of users. I built enterprise grade fintech systems at JP Morgan.
-          </p><p>
-          I'm very focused on blockchain technology which I've been involved in since it's early days. I'm currently the founder and CEO of <a href="https://menlo.one/" target="_blank">Menlo One</a>, a blockchain technology company that makes it easy to build products that are secure, transparent, and censorship resistant. 
+            I previously founded <a href="https://www.getverona.com/" target="_blank">Verona</a>, an app that connects people across social divides. At the dawn of the virtual work movement I co-founded Speek, a meeting and collaboration platform. I previously worked at IBM where I developed tools now used by millions of users. I built enterprise grade fintech systems at JP Morgan. I'm a <Link href={`/blog/ted-talk/`}>TED Resident alum</Link> and public speaker on the intersection of society, technology, and culture.
           </p>
         </div>
       </section>
-
 
       <section>
         <p className="embed-container">
@@ -75,10 +69,8 @@ const Home = (props: {
         </p>
       </section>
 
-
-
       <section>
-        <h3 className="text-center h4">Featured In</h3>
+        <h3 className="text-center h5">Featured In</h3>
         <div className="mediaLogos">
             <div className="mediaLogos-wrapper">
 
@@ -131,9 +123,8 @@ const Home = (props: {
         </div>
       </section>
 
-
       <section className="">
-        <h3 className="text-center">Recent Posts</h3>
+        <h4 className="text-center">Recent Posts</h4>
         <div className="list-group">
           <div
             style={{

@@ -81,9 +81,11 @@ function HomeMM() {
 
   const blockchainInfo = async () => {
     console.log("----blockchainInfo");
-    const web3 = new Web3(library.provider);
+    const web3 = new Web3(library);
+    return;
+    // const web3 = new Web3(library.provider);
 
-    // piece of shit
+    // dont use this
     // const web3 = new Web3(injected);
 
     console.log(web3)

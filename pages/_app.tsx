@@ -56,7 +56,7 @@ const App: React.FC = ({ Component, pageProps }: any) => {
 
       <Head>
 
-        <meta name="description" content="Hi I'm Matthew Nolan, an entrepreneur, engineer, and investor. I build tech that makes the world more open and fun." />
+        <meta name="description" content="Hi I'm Matthew Nolan. I build blockchain technology that makes the world more open and connected." />
 
         <meta name="keywords" content="Matthew Nolan, blockchain, crypto, app, Verona, Menlo One" />
 
@@ -93,14 +93,17 @@ const App: React.FC = ({ Component, pageProps }: any) => {
         <div className="container-fluid">
           <div className="row justify-content-md-center">
 
-            <div className="col-md-9 col-lg-7 ml-md-auto">
+            <div className="col-xl-6 col-lg-8 col-md-9 ml-md-auto">
               <Component {...pageProps} />
             </div> { /*e col col-sm-8 */ }
 
-            <div className="col-md-3 ml-md-auto" style={{backgroundColor:'transparent'}}>
-              {allPosts.map((post: any, j: any) => {
-                return <PostCardSide post={post} key={j} />;
-              })}
+            <div className="col-xl-3 col-lg-3 col-md-3 ml-md-auto" style={{backgroundColor:'transparent', marginTop:'8em'}}>
+              <div className="list-group">
+                <small className="list-group-item">Recent Posts</small>
+                  {allPosts.map((post: any, j: any) => {
+                    return <PostCardSide post={post} key={j} />;
+                  })}
+              </div>
             </div> { /*e col col-sm-8 */ }
 
           </div> { /*e row justify-content-sm-center */ }
