@@ -106,7 +106,12 @@ section p {
 
 
 /* ------------------- WALLET -------------------*/
+.btn-wallet {
+  min-width: 200px;
+}
+
 .wallet-container {
+  text-align: right;
   /* min-height: 100vh; */
   /* padding: 0 0.5rem; */
   /* display: flex; */
@@ -129,7 +134,7 @@ section p {
   box-shadow: rgb(0 0 0 / 10%) 0px 4px 20px; */
 }
 
-.button {
+.wallet-button {
   width: 300px;
   height: 60px;
   background: #ffffff;
@@ -142,17 +147,15 @@ section p {
   margin: 20px auto;
 }
 
-.button:hover {
+.wallet-:hover {
   cursor: pointer;
 }
 
 .connected-container {
-  display: flex;
+  /* display: flex;
   /* margin: 20px auto; */
-  width: 400px;
-  border-radius: 30px;
-  background: #ffffff;
-  box-shadow: rgb(0 0 0 / 10%) 0px 4px 20px;
+  /* width: 400px; */
+  /* border-radius: 30px; */
 }
 
 .wallet-row {

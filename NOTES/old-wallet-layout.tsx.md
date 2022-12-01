@@ -120,40 +120,6 @@ function HomeMM() {
 
   return (
     <div className="wallet-container">
-
-      <button 
-        type="button" 
-        className="btn btn-primary btn-wallet">
-          {web3React.active ? (
-              <div>{getNetwork(web3React.chainId)}</div>
-          ) : (
-              <div>Ethereum</div>
-          )}
-      </button>
-
-      <button 
-        onClick={() => {
-          if (!web3React.active) {
-            console.log("connect btn")
-            setLatestConnector(ConnectorNames.Injected);
-            setLatestOp(W3Operations.Connect);
-            web3React.activate(injected);
-          } else {
-            console.log("disconnect btn")
-            setLatestOp(W3Operations.Disconnect);
-            web3React.deactivate();
-          }
-        }}
-        type="button" 
-        className="btn btn-primary btn-wallet">
-          {web3React.active ? (
-              <div>{getTruncatedAddress(web3React.account)}</div>
-          ) : (
-              <div>Connect Wallet</div>
-          )}
-      </button>
-
-
       {!web3React.active ? (
         <div className="connect-wallet-container">
           <div className="connect-wallet-card">
@@ -186,6 +152,7 @@ function HomeMM() {
       {web3React.active ? (
         <>
           <div className="connected-container">
+            <button type="button" className="btn btn-primary">Primary</button>
             <div className="connected-card">
               <div className="wallet-row network-section">
                 {/* <div className="row-title">Network</div> */}
