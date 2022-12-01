@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 // import { useWeb3React, Web3ReactProvider } from "@web3-react/core";
 import { useWeb3React } from "@web3-react/core";
 import { InjectedConnector } from "@web3-react/injected-connector";
-import { WalletConnectConnector } from "@web3-react/walletconnect-connector";
+// import { WalletConnectConnector } from "@web3-react/walletconnect-connector";
 // import { Web3Provider } from "@ethersproject/providers";
 import useLocalStorage from "../hooks/useLocalStorage";
 // import { MetamaskIcon, WalletConnectIcon } from "../components/icons";
@@ -264,7 +264,7 @@ function HomeMM() {
       <button 
         onClick={() => {
           // console.log("CLICK");
-          blockchainInfo();
+          // blockchainInfo();
         }}
         type="button" 
         className="btn btn-outline-secondary disabled btn-wallet">
