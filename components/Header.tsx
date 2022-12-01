@@ -12,7 +12,7 @@ import { InjectedConnector } from "@web3-react/injected-connector";
 import { WalletConnectConnector } from "@web3-react/walletconnect-connector";
 // import { Web3Provider } from "@ethersproject/providers";
 import useLocalStorage from "../hooks/useLocalStorage";
-import { MetamaskIcon, WalletConnectIcon } from "../components/icons";
+// import { MetamaskIcon, WalletConnectIcon } from "../components/icons";
 
 const injected = new InjectedConnector({ supportedChainIds: [1, 3, 4, 5, 42] });
 // TODO set env var
@@ -148,7 +148,7 @@ function HomeMM() {
         className="btn btn-outline-secondary btn-wallet">
           {web3React.active ? (
             <div>
-              <span className="align-text-top"><Blockies seed={web3React.account} size={5}></Blockies></span>
+            <span className="align-text-top"><Blockies seed={getTruncatedAddress(web3React.account)} size={5} /></span>
               <span className="align-top">{getTruncatedAddress(web3React.account)}</span>
             </div>
           ) : (
