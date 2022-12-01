@@ -7,24 +7,25 @@ import { generateRSS } from '../rssUtil';
 // import { globals } from '../globals';
 
 // ------- S Web3 Stuff
-import { useWeb3React } from "@web3-react/core";
+// import { useWeb3React } from "@web3-react/core";
 
 
 const Home = (props: {
   posts: PostData[];
 }) => {
 
-  const web3React = useWeb3React();
-  const blockchainInfo = function () {
-    console.log("----SIGN it");
-    console.log(web3React);
-  }
+  // const web3React = useWeb3React();
+  // const blockchainInfo = function () {
+  //   console.log("----SIGN it");
+  //   console.log(web3React);
+  //   web3React.signMessage()
+  // }
 
   return (
     <div>
 
-      <div className="btn" onClick={() => { blockchainInfo(); }}>BLOCKCHAIN!</div>
-      <div>{web3React.account}</div>
+      {/* <div className="btn" onClick={() => { blockchainInfo(); }}>BLOCKCHAIN!</div> */}
+      {/* <div>{web3React.account}</div> */}
       <Head>
         <title>Matthew Nolan | Entrepreneur, Engineer, Investor</title>
       </Head>
