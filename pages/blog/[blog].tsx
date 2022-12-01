@@ -25,7 +25,10 @@ export const getStaticPaths = () => {
 
 export const getStaticProps = async ({ params }: any) => {
   const post = await loadPost(`blog/${params.blog}.md`);
+  
+  // this has to go on every page now to make sidebar work
   const posts = await loadBlogPosts();
+  
   return { props: { post, posts } };
 };
 

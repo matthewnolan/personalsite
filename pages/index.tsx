@@ -148,7 +148,11 @@ const Home = (props: {
 };
 export default Home;
 
+
+// can only use getStaticProps in PAGES dir
+
 export const getStaticProps = async () => {
+  // this has to go on every page now to make sidebar work
   const posts = await loadBlogPosts();
 
   // comment out to turn off RSS generation

@@ -70,7 +70,7 @@ body .navbar-light .navbar-nav .nav-link {
 /*Links on home*/
 .list-group-item {
   border:0;
-  background-color:none;
+  background-color: transparent !important;
 }
 .list-group-item:hover {
   background-color: transparent !important;

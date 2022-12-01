@@ -12,11 +12,6 @@ import { PostData, loadBlogPosts } from '../loader';
 import './global.css';
 
 
-// export const getStaticProps = async () => {
-//   const posts = await loadBlogPosts();
-//   return { props: { posts } };
-// };
-
 const App: React.FC = ({ Component, pageProps }: any) => {
   return (
     <div>
@@ -62,8 +57,7 @@ const App: React.FC = ({ Component, pageProps }: any) => {
             <Component {...pageProps} />
           </div> { /*e col col-sm-8 */ }
 
-          <div className="col-md-3 ml-md-auto" style={{backgroundColor:'red'}}>
-            Header Sidebar
+          <div className="col-md-3 ml-md-auto" style={{backgroundColor:'transparent'}}>
             {<Sidebar {...pageProps} />}
             {/*<Sidebar posts={posts} />*/}
           </div> { /*e col col-sm-8 */ }

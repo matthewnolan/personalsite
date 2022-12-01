@@ -1,35 +1,24 @@
 import React from 'react';
 import Link from 'next/link';
 
-import { PostData, loadBlogPosts } from '../loader';
+// import { PostData, loadBlogPosts } from '../loader';
 import { PostCardSide } from '../components/PostCardSide';
 
 import { globals } from '../globals';
-
-
-// export const Sidebar: React.FC<{ posts: PostData }> = ({ posts }) => {
-
 
 export const Sidebar = (props: {
   posts: PostData[];
 }) => {
   console.log("SIDEBARR props ", props);
-  // const wtf = async () => {
-  //   const posts = await loadBlogPosts();
-  //   console.log("posrsss ", posts);
-  //   return { props: { posts } };
-  // };
-  // wtf();
 
   return (
       <div className="">
-        SIDEBARRRR
 
-        <Link href={`/`}>
+{/*        <Link href={`/`}>
           <a className="navbar-brand">
             <small>{globals.siteName}</small>
           </a>
-        </Link>
+        </Link>*/}
 
         <div className="list-group">
           <div
@@ -42,6 +31,7 @@ export const Sidebar = (props: {
               padding: '0px 0vw',
             }}
           >
+          <p>Posts</p>
             {props.posts.map((post, j) => {
               return <PostCardSide post={post} key={j} />;
             })}
@@ -51,13 +41,3 @@ export const Sidebar = (props: {
     </div>
   );
 };
-// export default Sidebar;
-
-
-// can only use this in PAGES dir
-
-// export const getStaticProps = async () => {
-//   const posts = await loadBlogPosts();
-//   return { props: { posts } };
-// };
-
