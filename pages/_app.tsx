@@ -6,7 +6,7 @@ import { PostCardSide } from '../components/PostCardSide';
 // import { globals } from '../globals';
 import './global.css';
 
-// ------- Web3 Stuff
+// ------- S Web3 Stuff
 // import { useEffect, useState, useRef } from "react";
 // import { useEffect, useState } from "react";
 // import { useWeb3React, Web3ReactProvider } from "@web3-react/core";
