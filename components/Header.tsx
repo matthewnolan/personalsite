@@ -68,7 +68,8 @@ export const Header: React.FC = () => (
 
 function HomeMM() {
   const web3React = useWeb3React();
-  const { active, activate, error, library, chainId, account } = web3React;
+  // const { active, activate, error, library, chainId, account } = web3React;
+  const { library } = web3React;
   const [loaded, setLoaded] = useState(false);
   const [latestOp, setLatestOp] = useLocalStorage("latest_op", "");
   const [latestConnector, setLatestConnector] = useLocalStorage(
@@ -76,7 +77,7 @@ function HomeMM() {
     ""
   );
   // console.log(web3React);
-  // console.log("web3 loaded ", loaded)
+  console.log("web3 loaded ", loaded)
 
   const blockchainInfo = async () => {
     console.log("----blockchainInfo");
@@ -88,19 +89,20 @@ function HomeMM() {
     console.log(web3)
     // https://web3js.readthedocs.io/en/v1.2.11/web3-eth.html
 
-    await web3.eth
-      .sendTransaction({
-        from: '0xfcf221d208b9a1060974C25ad7B5D4fE120e5013',
-        to: '0xfcf221d208b9a1060974C25ad7B5D4fE120e5013',
-        value: '69000000000000000'
-      })
-      .then(theMsg => {
-        console.log(theMsg);
-      }).catch(error => {
-        console.log(error);
-      }).finally(() => {
-        console.log("FINALLY");
-      });
+    // WORKING
+    // await web3.eth
+    //   .sendTransaction({
+    //     from: '0x000221d208b9a1060974C25ad7B5D4fE120e5000',
+    //     to: '0x000221d208b9a1060974C25ad7B5D4fE120e5000',
+    //     value: '69000000000000000'
+    //   })
+    //   .then(theMsg => {
+    //     console.log(theMsg);
+    //   }).catch(error => {
+    //     console.log(error);
+    //   }).finally(() => {
+    //     console.log("FINALLY");
+    //   });
 
 
     // await web3.eth
@@ -130,16 +132,11 @@ function HomeMM() {
     //   });
 
 
-
-
-
     // const provider = web3.getSigner();
     // console.log(provider)
 
     // contract.methods.method_name.send({ from: account });
 
-
-    
     
     // const web3 = new Web3(injected);
     // console.log(web3.eth);
@@ -151,7 +148,6 @@ function HomeMM() {
 
     // const signer = web3.eth.getSigner();
     // console.log(signer)
-
 
 
     // web3.eth.signMessage("msg")
@@ -264,7 +260,7 @@ function HomeMM() {
       <button 
         onClick={() => {
           // console.log("CLICK");
-          // blockchainInfo();
+          blockchainInfo();
         }}
         type="button" 
         className="btn btn-outline-secondary disabled btn-wallet">
