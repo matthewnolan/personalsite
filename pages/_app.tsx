@@ -1,20 +1,16 @@
 import Head from 'next/head';
 import React from 'react';
 import { Header } from '../components/Header';
-// import { Sidebar } from '../components/Sidebar';
 import { Footer } from '../components/Footer';
 import { PostCardSide } from '../components/PostCardSide';
-
-// import { PostData, loadBlogPosts } from '../loader';
-
-
 // import { globals } from '../globals';
-
 import './global.css';
 
 
+
 const App: React.FC = ({ Component, pageProps }: any) => {
-  console.log(pageProps);
+
+  // console.log("appprops ", pageProps);
 
   let allPosts = [];
   if (!pageProps.hasOwnProperty('posts')) {

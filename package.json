@@ -33,7 +33,9 @@
     "export": "next export"
   },
   "dependencies": {
+    "@usedapp/core": "^1.2.2",
     "eslint-config-next": "^13.0.5",
+    "ethers": "^5.7.2",
     "fecha": "^4.2.0",
     "glob": "^7.1.6",
     "gray-matter": "^4.0.2",
