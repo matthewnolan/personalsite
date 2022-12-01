@@ -79,43 +79,57 @@ function HomeMM() {
   // console.log("web3 loaded ", loaded)
 
   const blockchainInfo = async () => {
-    // console.log("----blockchainInfo");
-    // console.log(web3React);
-
-    //  Enable session (triggers QR Code modal)
-    // await injected.enable();
-    //  Create Web3
-    console.log("------ web3 ------")
+    console.log("----blockchainInfo");
     const web3 = new Web3(library.provider);
+
+    // piece of shit
     // const web3 = new Web3(injected);
 
     console.log(web3)
-
-    const transactionParameters = [
-      {
-        method: "eth_sendTransaction",
-        params: [
-          {
-            to: "0xfcf221d208b9a1060974C25ad7B5D4fE120e5013", // Required except during contract publications.
-            from: "0xfcf221d208b9a1060974C25ad7B5D4fE120e5013", // must match user's active address.
-          },
-        ],
-      },
-    ];
-    console.log(transactionParameters[0].params[0]);
-
+    // https://web3js.readthedocs.io/en/v1.2.11/web3-eth.html
 
     await web3.eth
-      .sendTransaction(transactionParameters[0].params[0])
-      .on("receipt", (receipt) => {
-        console.log(receipt, "receipt");
+      .sendTransaction({
+        from: '0xfcf221d208b9a1060974C25ad7B5D4fE120e5013',
+        to: '0xfcf221d208b9a1060974C25ad7B5D4fE120e5013',
+        value: '69000000000000000'
       })
-      .on("transactionHash", (hash) => {
-        console.log(hash, "hash");
-      })
-      .on("error", (err) => {
-        console.log(err, "error");
+      .then(theMsg => {
+        console.log(theMsg);
+      }).catch(error => {
+        console.log(error);
+      }).finally(() => {
+        console.log("FINALLY");
       });
+
+
+    // await web3.eth
+    //   .signMessage("msg")
+    //   .then(theMsg => {
+    //     console.log(theMsg);
+    //   }).catch(error => {
+    //     console.log(error);
+    //   }).finally(() => {
+    //     console.log("FINALLY");
+    //   });
+
+    // await web3.eth
+    //   .sendTransaction({
+    //     from: '0xfcf221d208b9a1060974C25ad7B5D4fE120e5013',
+    //     to: '0xfcf221d208b9a1060974C25ad7B5D4fE120e5013',
+    //     value: '69000000000000000'
+    //   })
+    //   .on("receipt", (receipt) => {
+    //     console.log(receipt, "receipt");
+    //   })
+    //   .on("transactionHash", (hash) => {
+    //     console.log(hash, "hash");
+    //   })
+    //   .on("error", (err) => {
+    //     console.log(err, "error");
+    //   });
+
+
 
 
 
@@ -249,11 +263,8 @@ function HomeMM() {
 
       <button 
         onClick={() => {
-          console.log("CLICK");
+          // console.log("CLICK");
           blockchainInfo();
-          // console.log(web3React);
-          // const web3 = new Web3(library.provider);
-          // console.log(web3)
         }}
         type="button" 
         className="btn btn-outline-secondary disabled btn-wallet">
