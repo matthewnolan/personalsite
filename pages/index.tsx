@@ -8,14 +8,15 @@ import { generateRSS } from '../rssUtil';
 
 
 
-import { useEffect, useState, useRef } from "react";
+// import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import { useWeb3React, Web3ReactProvider } from "@web3-react/core";
 import { InjectedConnector } from "@web3-react/injected-connector";
 import { WalletConnectConnector } from "@web3-react/walletconnect-connector";
 import { Web3Provider } from "@ethersproject/providers";
 import useLocalStorage from "../hooks/useLocalStorage";
 import { MetamaskIcon, WalletConnectIcon } from "../components/icons";
-import Layout from "../components/Layout";
+// import Layout from "../components/Layout";
 
 const injected = new InjectedConnector({ supportedChainIds: [1, 3, 4, 5, 42] });
 const wcConnector = new WalletConnectConnector({
@@ -32,7 +33,7 @@ const W3Operations = {
   Disconnect: "disconnect",
 };
 
-function getLibrary(provider) {
+function getLibrary(provider: any) {
   const library = new Web3Provider(provider);
   // library.pollingInterval = 12000;
   return library;
@@ -163,7 +164,6 @@ const Home = (props: {
       </section>
 
 
-
       <section className="">
         <h3 className="text-center">Recent Posts</h3>
         <div className="list-group">
@@ -213,7 +213,7 @@ export const getStaticProps = async () => {
 
 function HomeMM() {
   const web3React = useWeb3React();
-  const { active, activate, error } = web3React;
+  // const { active, activate, error } = web3React;
   const [loaded, setLoaded] = useState(false);
 
   const [latestOp, setLatestOp] = useLocalStorage("latest_op", "");
@@ -221,7 +221,8 @@ function HomeMM() {
     "latest_connector",
     ""
   );
-  // console.log(web3React);
+  console.log(web3React);
+  console.log(loaded);
 
   useEffect(() => {
     if (latestOp == "connect" && latestConnector == "injected") {
@@ -241,14 +242,14 @@ function HomeMM() {
     }
   }, []);
 
-  const getTruncatedAddress = (address) => {
+  const getTruncatedAddress = (address: any) => {
     if (address && address.startsWith("0x")) {
       return address.substr(0, 4) + "..." + address.substr(address.length - 4);
     }
     return address;
   };
 
-  const getNetwork = (chainId) => {
+  const getNetwork = (chainId: any) => {
     switch (chainId) {
       case 1:
         return "Mainnet";
@@ -329,19 +330,10 @@ function HomeMM() {
           </>
         ) : null}
 
-        <div className="github">
-          <a
-            href="https://github.com/shivkanthb/web3-starter"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Github{" "}
-          </a>
-        </div>
 
         <style jsx>{`
           .container {
-            min-height: 100vh;
+            // min-height: 100vh;
             /* padding: 0 0.5rem; */
             display: flex;
             flex-direction: column;

@@ -19,6 +19,7 @@ https://seositecheckup.com/seo-audit/matthewnolan.xyz
 https://github.com/vriad/devii
 https://devii.dev/
 https://vriad.com/essays/devii
+https://github.com/shivkanthb/web3-starter
 
 # Handy
 https://www.epochconverter.com/
