@@ -8,8 +8,7 @@ import Link from 'next/link'
 export const PostCardSide: React.FC<{ post: PostData }> = (props) => {
   const post = props.post;
   return (
-    <Link href={`/${post.path}`}> 
-    <a className="list-group-item list-group-item-action">
+    (<Link href={`/${post.path}`} className="list-group-item list-group-item-action">
 
       <div className="media mb-1">
 
@@ -44,7 +43,6 @@ export const PostCardSide: React.FC<{ post: PostData }> = (props) => {
         </div>
       </div>
 
-    </a>
-    </Link>
+    </Link>)
   );
 };

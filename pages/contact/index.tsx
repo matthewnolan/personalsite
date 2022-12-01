@@ -38,7 +38,7 @@ const Contact = () => {
     
 
       <section>
-        <Link href={`/`}><a className="btn btn-lg btn-link homeBtn"><i className="fa fa-arrow-circle-left fa-1x"></i>Home</a></Link>
+        <Link href={`/`} className="btn btn-lg btn-link homeBtn"><i className="fa fa-arrow-circle-left fa-1x"></i>Home</Link>
       </section>
 
 

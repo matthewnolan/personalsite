@@ -6,10 +6,10 @@ import { globals } from '../globals';
 export const Header: React.FC = () => (
       <nav className="navbar navbar-expand-sm navbar-light">
 
-        <Link href={`/`}>
-          <a className="navbar-brand">
-            <small>{globals.siteName}</small>
-          </a>
+        <Link href={`/`} className="navbar-brand">
+
+          <small>{globals.siteName}</small>
+
         </Link>
 
         {
@@ -22,15 +22,15 @@ export const Header: React.FC = () => (
           <ul className="navbar-nav ml-auto">
 
             <li className="nav-item">
-              <Link href={`/blog`}><a className="nav-link">All Posts</a></Link>
+              <Link href={`/blog`} className="nav-link">All Posts</Link>
             </li>
 
             <li className="nav-item">
-              <Link href={`/about`}><a className="nav-link">About</a></Link>
+              <Link href={`/about`} className="nav-link">About</Link>
             </li>
 
             <li className="nav-item">
-              <Link href={`/contact`}><a className="nav-link">Contact</a></Link>
+              <Link href={`/contact`} className="nav-link">Contact</Link>
             </li>
 
             <li className="nav-item">
