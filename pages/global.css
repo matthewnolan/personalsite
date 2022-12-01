@@ -117,10 +117,26 @@ section p {
   text-align: right;
 }
 .btn-wallet {
-  min-width: 200px;
+  min-width: 170px;
   margin-right:0.5em;
   border-radius: 1em;
+  min-height: 3em;
 }
+.btn-wallet .identicon {
+  border-radius: 1em;
+  margin-right:8px;
+  /* display:inline-block; */
+}
+.wallet-btn-inside {
+}
+
+
+
+
+
+
+
+
 
 
 /* -------  ReactMarkdown */

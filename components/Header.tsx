@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { globals } from '../globals';
 
-
+import Blockies from 'react-blockies';
 
 // import { useEffect, useState, useRef } from "react";
 import { useEffect, useState } from "react";
@@ -125,9 +125,9 @@ function HomeMM() {
         type="button" 
         className="btn btn-outline-secondary disabled btn-wallet">
           {web3React.active ? (
-              <div>{getNetwork(web3React.chainId)}</div>
+            <div className="align-top">{getNetwork(web3React.chainId)}</div>
           ) : (
-            <div className="hidden-text">Ethereum Mainnet</div>
+            <div className="hidden-text align-top">Ethereum Mainnet</div>
           )}
       </button>
 
@@ -147,9 +147,12 @@ function HomeMM() {
         type="button" 
         className="btn btn-outline-secondary btn-wallet">
           {web3React.active ? (
-              <div>{getTruncatedAddress(web3React.account)}</div>
+            <div>
+              <span className="align-text-top"><Blockies seed={web3React.account} size={5}></Blockies></span>
+              <span className="align-top">{getTruncatedAddress(web3React.account)}</span>
+            </div>
           ) : (
-              <div>Connect Wallet</div>
+            <span className="align-top">Connect Wallet</span>
           )}
       </button>
 
