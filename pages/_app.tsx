@@ -9,10 +9,6 @@ import { Footer } from '../components/Footer';
 import './global.css';
 
 const App: React.FC = ({ Component, pageProps }: any) => {
-
-  const message = "this messaghe";
-  
-
   return (
     <div>
 
@@ -56,11 +52,9 @@ const App: React.FC = ({ Component, pageProps }: any) => {
             <Component {...pageProps} />
           </div> { /*e col col-sm-8 */ }
 
-          <div className="col-md-2 ml-md-auto" style={{backgroundColor:'red'}}>
+          <div className="col-md-3 ml-md-auto" style={{backgroundColor:'red'}}>
             Sidebvar
-            {message}
             <Sidebar {...pageProps} />
-
           </div> { /*e col col-sm-8 */ }
 
         </div> { /*e row justify-content-sm-center */ }
