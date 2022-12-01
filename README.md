@@ -1,6 +1,6 @@
 yarn dev
 yarn build
-yarn export
+nvm 
 
 just push the repo to deploy to vercel
 
