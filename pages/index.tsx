@@ -58,9 +58,9 @@ const Home = (props: {
           }}
         >
           <p>
-          Hi I'm Matthew Nolan, an entrepreneur, engineer, &amp; investor. I build tech that makes the world more open and fun. I'm a <Link href={`/blog/ted-talk/`}>TED Resident alum</Link> and public speaker on the intersection of society, technology, and culture.
+          Hi I'm Matthew Nolan, an entrepreneur, engineer, &amp; investor. I build technology that makes the world more open and better connected. I'm a <Link href={`/blog/ted-talk/`}>TED Resident alum</Link> and public speaker on the intersection of society, technology, and culture.
           </p><p>
-          My belief is the Internet can do more than show us the world, it can help us to re-think it. I previously founded <a href="https://www.getverona.com/" target="_blank">Verona</a>, an app that connects people across social and political divides. At the dawn of the virtual work movement I co-founded Speek, a meeting and collaboration platform. I also previously worked at IBM where I developed tools to better understand how people use social media. I built enterprise grade fintech systems at JP Morgan.
+          I previously founded <a href="https://www.getverona.com/" target="_blank">Verona</a>, an app that connects people across social and political divides. At the dawn of the virtual work movement I co-founded Speek, a meeting and collaboration platform. I previously worked at IBM where I developed tools now used by millions of users. I built enterprise grade fintech systems at JP Morgan.
           </p><p>
           I'm very focused on blockchain technology which I've been involved in since it's early days. I'm currently the founder and CEO of <a href="https://menlo.one/" target="_blank">Menlo One</a>, a blockchain technology company that makes it easy to build products that are secure, transparent, and censorship resistant. 
           </p>

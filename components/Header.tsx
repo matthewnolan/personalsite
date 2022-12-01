@@ -32,19 +32,17 @@ const W3Operations = {
 export const Header: React.FC = () => (
       <nav className="navbar navbar-expand-sm navbar-light">
         <Link href={`/`} className="navbar-brand">
-          <small>{globals.siteName}</small>
+          {globals.siteName}
         </Link>
 
-        {
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon" />
         </button>
-        }
 
         <div className="-collapse navbar-collapse" id="navbarNavDropdown">
-          <ul className="navbar-nav ml-auto">
+          <ul className="navbar-nav mr-auto">
             <li className="nav-item">
-              <Link href={`/blog`} className="nav-link">All Posts</Link>
+              <Link href={`/blog`} className="nav-link">Posts</Link>
             </li>
             <li className="nav-item">
               <Link href={`/about`} className="nav-link">About</Link>
@@ -121,11 +119,10 @@ function HomeMM() {
   };
 
   return (
-    <div className="container">
+    <div className="wallet-container">
       {!web3React.active ? (
         <div className="connect-wallet-container">
           <div className="connect-wallet-card">
-            <div className="wallet-header">Connect your wallet</div>
             <div
               className="button metamask"
               onClick={() => {
@@ -137,7 +134,7 @@ function HomeMM() {
               Metamask
               <MetamaskIcon />
             </div>
-            <div
+            {/* <div
               className="button walletconnect"
               onClick={() => {
                 setLatestConnector(ConnectorNames.WalletConnect);
@@ -147,7 +144,7 @@ function HomeMM() {
             >
               WalletConnect
               <WalletConnectIcon />
-            </div>
+            </div> */}
           </div>
         </div>
       ) : null}
@@ -171,7 +168,7 @@ function HomeMM() {
               </div>
               <hr className="divider" />
               <div
-                className="row disconnect-button"
+                className="wallet-row disconnect-button"
                 onClick={() => {
                   setLatestOp(W3Operations.Disconnect);
                   web3React.deactivate();
@@ -185,101 +182,102 @@ function HomeMM() {
       ) : null}
 
       <style jsx>{`
-          .container {
-            // min-height: 100vh;
-            /* padding: 0 0.5rem; */
-            // display: flex;
-            // flex-direction: column;
-            // justify-content: center;
-            align-items: center;
-            /* height: 100vh; */
-            background-color: #fafafa;
-          }
-          .connect-wallet-container {
-            display: flex;
-            width: 400px;
-            height: 300px;
-            border-radius: 30px;
-            background: #ffffff;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            box-shadow: rgb(0 0 0 / 10%) 0px 4px 20px;
-          }
-          .wallet-header {
-            font-size: 20px;
-            font-weight: 700;
-            margin-bottom: 30px;
-          }
-          .button {
-            // width: 300px;
-            height: 60px;
-            background: #ffffff;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 25px;
-            margin: 20px auto;
-          }
-          .button:hover {
-            cursor: pointer;
-          }
-          .connected-container {
-            // display: flex;
-            /* margin: 20px auto; */
-            // width: 400px;
-            border-radius: 30px;
-            background: #ffffff;
-            box-shadow: rgb(0 0 0 / 10%) 0px 4px 20px;
-          }
-          .row {
-            display: flex;
-            flex-direction: column;
-            height: 80px;
-            width: 400px;
-            justify-content: center;
-            padding: 0 20px;
-          }
-          .row-title {
-            font-size: 16px;
-            color: #afafaf;
-            font-weight: 900;
-          }
-          .row-subtitle {
-            font-size: 22px;
-            font-weight: 700;
-          }
-          .disconnect-button {
-            align-items: center;
-            color: #f96666;
-            font-size: 20px;
-            font-weight: 900;
-          }
-          .disconnect-button:hover {
-            cursor: pointer;
-          }
-          .divider {
-            height: 0.1px;
-            background-color: #e5e5e5;
-            border: none;
-            margin: unset;
-          }
-          .github {
-            position: fixed;
-            bottom: 30px;
-          }
-          @media screen and (max-width: 400px) {
-            .connect-wallet-container {
-              width: 80%;    
-            }
-            .button {
-              width: 240px;
-            }
-            .connected-container, .row  {
-              width: 300px;
-            }
+
+          // .container {
+          //   // min-height: 100vh;
+          //   /* padding: 0 0.5rem; */
+          //   // display: flex;
+          //   // flex-direction: column;
+          //   // justify-content: center;
+          //   align-items: center;
+          //   /* height: 100vh; */
+          //   background-color: #fafafa;
+          // }
+          // .connect-wallet-container {
+          //   display: flex;
+          //   width: 400px;
+          //   height: 300px;
+          //   border-radius: 30px;
+          //   background: #ffffff;
+          //   justify-content: center;
+          //   align-items: center;
+          //   text-align: center;
+          //   box-shadow: rgb(0 0 0 / 10%) 0px 4px 20px;
+          // }
+          // .wallet-header {
+          //   font-size: 20px;
+          //   font-weight: 700;
+          //   margin-bottom: 30px;
+          // }
+          // .button {
+          //   // width: 300px;
+          //   height: 60px;
+          //   background: #ffffff;
+          //   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+          //   border-radius: 10px;
+          //   display: flex;
+          //   align-items: center;
+          //   justify-content: space-between;
+          //   padding: 0 25px;
+          //   margin: 20px auto;
+          // }
+          // .button:hover {
+          //   cursor: pointer;
+          // }
+          // .connected-container {
+          //   // display: flex;
+          //   /* margin: 20px auto; */
+          //   // width: 400px;
+          //   border-radius: 30px;
+          //   background: #ffffff;
+          //   box-shadow: rgb(0 0 0 / 10%) 0px 4px 20px;
+          // }
+          // .row {
+          //   display: flex;
+          //   flex-direction: column;
+          //   height: 80px;
+          //   width: 400px;
+          //   justify-content: center;
+          //   padding: 0 20px;
+          // }
+          // .row-title {
+          //   font-size: 16px;
+          //   color: #afafaf;
+          //   font-weight: 900;
+          // }
+          // .row-subtitle {
+          //   font-size: 22px;
+          //   font-weight: 700;
+          // }
+          // .disconnect-button {
+          //   align-items: center;
+          //   color: #f96666;
+          //   font-size: 20px;
+          //   font-weight: 900;
+          // }
+          // .disconnect-button:hover {
+          //   cursor: pointer;
+          // }
+          // .divider {
+          //   height: 0.1px;
+          //   background-color: #e5e5e5;
+          //   border: none;
+          //   margin: unset;
+          // }
+          // .github {
+          //   position: fixed;
+          //   bottom: 30px;
+          // }
+          // @media screen and (max-width: 400px) {
+          //   .connect-wallet-container {
+          //     width: 80%;    
+          //   }
+          //   .button {
+          //     width: 240px;
+          //   }
+          //   .connected-container, .row  {
+          //     width: 300px;
+          //   }
         `}</style>
     </div>
   );
