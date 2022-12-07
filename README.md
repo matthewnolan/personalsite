@@ -36,6 +36,12 @@ https://github.com/jscottsmith/react-scroll-parallax
 # Play w GFX
 https://www.pinterest.com/pin/765119424170551781/
 
+I like their colors
+https://www.theblock.co/
+
+# NFT
+https://docs.owlprotocol.xyz/contracts
+
 # DNS
 
 ns1.vercel-dns.com

@@ -5,13 +5,16 @@ html {
 }
 html body .navbar-light,
 body .nav-link {
-  color: #000000;
+  /* color: #000000; */
   /*border-bottom:1px solid #373a3c;*/
   /*border-bottom:1px solid #373a3c9c;*/
   /*border-bottom:1px solid #f8f9fa;*/
 }
 body .navbar-light .navbar-nav .nav-link {
-  color: #000000;
+  /* color: #000000; */
+}
+body p {
+  line-height: 1.8em;
 }
 .hidden {
   display: none !important;
@@ -19,6 +22,9 @@ body .navbar-light .navbar-nav .nav-link {
 .hidden-text {
   /* color: transparent !important; */
   opacity: 0.5;
+}
+.invertImage {
+  filter: invert(1);
 }
 
 .container {

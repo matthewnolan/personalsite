@@ -84,6 +84,10 @@ const App: React.FC = ({ Component, pageProps }: any) => {
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" />
 
+        {/* <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cyborg/bootstrap.min.css" integrity="sha384-nEnU7Ae+3lD52AK+RGNzgieBWMnEfgTbRHIwEvp1XXPdqdO6uLTd/NwXbzboqjc2" crossorigin="anonymous" /> */}
+        {/* <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/superhero/bootstrap.min.css" integrity="sha384-HnTY+mLT0stQlOwD3wcAzSVAZbrBp141qwfR4WfTqVQKSgmcgzk+oP0ieIyrxiFO" crossorigin="anonymous" /> */}
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/darkly/bootstrap.min.css" integrity="sha384-nNK9n28pDUDDgIiIqZ/MiyO3F4/9vsMtReZK39klb/MtkZI3/LtjSjlmyVPS3KdN" />
+
       </Head>
 
       <Web3ReactProvider getLibrary={getLibrary}>
@@ -93,11 +97,11 @@ const App: React.FC = ({ Component, pageProps }: any) => {
         <div className="container-fluid">
           <div className="row justify-content-md-center">
 
-            <div className="col-xl-6 col-lg-8 col-md-9 ml-md-auto">
+            <div className="col-xl-6 col-lg-8 col-md-9 offset-xl-2 offset-lg-1 -ml-md-auto -ml-auto">
               <Component {...pageProps} />
             </div> { /*e col col-sm-8 */ }
 
-            <div className="col-xl-3 col-lg-3 col-md-3 ml-md-auto" style={{backgroundColor:'transparent', marginTop:'8em'}}>
+            <div className="col-xl-3 col-lg-3 col-md-3 ml-md-auto -ml-auto" style={{backgroundColor:'transparent', marginTop:'8em'}}>
               <div className="list-group">
                 <small className="list-group-item">Recent Posts</small>
                   {allPosts.map((post: any, j: any) => {

@@ -75,27 +75,27 @@ const Home = (props: {
             <div className="mediaLogos-wrapper">
 
 <a target="_blank" className="menloLogos" href="https://www.forbes.com/sites/andrewrossow/2018/07/10/top-10-new-blockchain-companies-to-watch-for-in-2018">
-  <img src="/images/logos/logo-forbes.svg" alt="Matthew Nolan in Forbes" /></a>
+              <img src="/images/logos/logo-forbes.svg" alt="Matthew Nolan in Forbes" className="invertImage" /></a>
 <a target="_blank" className="menloLogos" href="https://venturebeat.com/2018/04/26/menlo-one-launches-townhall-to-reward-users-for-sharing-token-sale-news/">
-  <img src="/images/logos/logo-venturebeat.svg" alt="VentureBeat Blockchain media article about the decentralized menlo one blockchain framework" /></a>
+              <img src="/images/logos/logo-venturebeat.svg" className="invertImage" alt="VentureBeat Blockchain media article about the decentralized menlo one blockchain framework" /></a>
 <a target="_blank" className="menloLogos" href="https://www.inc.com/melanie-curtin/the-problem-with-blockchain-that-no-ones-talking-about.html">
-  <img src="/images/logos/logo-inc.png" alt="Inc Magazine Blockchain media article about the decentralized menlo one blockchain framework" /></a>
+              <img src="/images/logos/logo-inc.png" className="invertImage" alt="Inc Magazine Blockchain media article about the decentralized menlo one blockchain framework" /></a>
 <a target="_blank" className="menloLogos" href="https://www.entrepreneur.com/article/316184">
-  <img src="/images/logos/logo-entrepreneur.png" alt="Entrepreneur Blockchain media article about the decentralized menlo one blockchain framework" /></a>
+              <img src="/images/logos/logo-entrepreneur.png" className="invertImage"  alt="Entrepreneur Blockchain media article about the decentralized menlo one blockchain framework" /></a>
 <a target="_blank" className="menloLogos" href="https://www.vice.com/fr/article/wng8vq/verona-veut-toujours-vous-faire-pecho-votre-pire-ennemi"><img src="/images/logos/m-logo-motherboard.png" alt="Matthew Nolan in Motherboard" /></a>
 <a target="_blank" className="menloLogos" href="https://www.influencive.com/menlo-one-ceo-matthew-nolan-on-building-the-future-of-decentralized-applications-dapps/">
-  <img src="/images/logos/logo-influencive.png" alt="Influencive Blockchain media article about the decentralized menlo one blockchain framework" /></a>
+              <img src="/images/logos/logo-influencive.png" className="invertImage"  alt="Influencive Blockchain media article about the decentralized menlo one blockchain framework" /></a>
 <a target="_blank" className="menloLogos" href="https://hackernoon.com/scammed-in-an-ico-3b106fc84031">
-  <img src="/images/logos/logo-hackernoon.png" alt="Hackernoon" /></a>
+              <img src="/images/logos/logo-hackernoon.png" className="invertImage" alt="Hackernoon" /></a>
 <a target="_blank" className="menloLogos" href="https://nulltx.com/what-are-dapp-scaling-frameworks/"><img src="/images/logos/logo-nulltx.png" alt="The Merkle Null TX Blockchain media article about the decentralized menlo one blockchain framework" /></a>
 <a target="_blank" className="menloLogos"  href="https://www.fastcompany.com/3057048/new-app-wants-to-make-peace-between-trump-supporters-and-latinos">
-  <img src="/images/logos/fast-company-verona.png" alt="Matthew Nolan in Fast Company" /></a>
+              <img src="/images/logos/fast-company-verona.png" className="invertImage" alt="Matthew Nolan in Fast Company" /></a>
 <a target="_blank" className="menloLogos" href="http://www.bbc.co.uk/programmes/p03lz3yk">
   <img src="/images/logos/m-logo-bbc.png" alt="Matthew Nolan in BBC" /></a>
 <a target="_blank" className="menloLogos"  href="https://www.vice.com/en/article/wd795q/a-new-app-is-trying-to-forge-friendships-between-democrats-and-republicans" >
-  <img src="/images/logos/m-logo-vice.png" alt="Matthew Nolan in Vice" /></a>
+              <img src="/images/logos/m-logo-vice.png" className="invertImage"  alt="Matthew Nolan in Vice" /></a>
 <a target="_blank" className="menloLogos"  href="http://www.refinery29.com/verona-app-world-peace" >
-  <img src="/images/logos/m-logo-ref.png" alt="Matthew Nolan in refinery29" /></a>
+              <img src="/images/logos/m-logo-ref.png" className="invertImage"  alt="Matthew Nolan in refinery29" /></a>
 <a target="_blank" className="menloLogos" href="https://www.livescience.com/51392-will-tech-bring-humanity-together-or-tear-it-apart.html">
   <img src="/images/logos/media-live-science-verona.png" alt="Matthew Nolan in live science" /></a>
 <a target="_blank" className="menloLogos" href="http://www.nbcwashington.com/news/local/5-Signs-America-Is-Not-So-Divided-After-All-397482681.html">
@@ -106,7 +106,7 @@ const Home = (props: {
   <img src="/images/logos/m-logo-france24.png" alt="Matthew Nolan in france24" /></a>
 <a target="_blank" className="menloLogos" href="http://nextshark.com/verona-app-matthew-nolan/">
   <img src="/images/logos/m-logo-next-shark.png" alt="Matthew Nolan in nextshark" /></a>
-<a target="_blank" className="menloLogos"   href="http://www.vanityfair.it/lifestyle/hi-tech/15/06/09/verona-app-che-fa-incontrare-israeliani-e-palestinesi">
+ <a target="_blank" className="menloLogos invertImage" href="http://www.vanityfair.it/lifestyle/hi-tech/15/06/09/verona-app-che-fa-incontrare-israeliani-e-palestinesi">
   <img src="/images/logos/m-logo-vanity.png" alt="Matthew Nolan in vanityfair" /></a>
 <a target="_blank" className="menloLogos"   href="http://www.producthunt.com/tech/verona" >
   <img src="/images/logos/m-logo-product-hunt.png" alt="Matthew Nolan in producthunt" /></a>
@@ -117,7 +117,7 @@ const Home = (props: {
 <a target="_blank" className="menloLogos" href="https://www.fox5dc.com/news/verona-app-seeks-to-bridge-divide-between-democrats-and-republicans">
   <img src="/images/logos/m-logo-fox-news.png" alt="Matthew Nolan in fox news" /></a>
 <a target="_blank" className="menloLogos" href="http://mic.com/articles/136375/i-tried-a-tinder-for-democrats-and-republicans">
-  <img src="/images/logos/m-logo-mic.png" alt="Matthew Nolan in mic.com" /></a>
+              <img src="/images/logos/m-logo-mic.png" className="invertImage"  alt="Matthew Nolan in mic.com" /></a>
 
           </div>
         </div>
