@@ -265,7 +265,7 @@ function HomeMM() {
           blockchainInfo();
         }}
         type="button" 
-        className="btn btn-outline-info disabled btn-wallet">
+        className="btn btn-outline-light disabled btn-wallet">
           {web3React.active ? (
             <div className="align-top">{getNetwork(web3React.chainId)}</div>
           ) : (
@@ -285,7 +285,7 @@ function HomeMM() {
           }
         }}
         type="button" 
-        className="btn btn-outline-info btn-wallet">
+        className="btn btn-outline-light btn-wallet">
           {web3React.active ? (
             <div>
             <span className="align-text-top"><Blockies seed={getTruncatedAddress(web3React.account)} size={5} /></span>
