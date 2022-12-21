@@ -78,8 +78,10 @@ export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
 
         </div>
 
-        <div style={{ width: '100%', padding: '0px 0px' }}>
+        <div className="postBodyText" style={{ width: '100%', padding: '0px 0px' }}>
+          
           <Markdown source={post.content} />
+
           <Link href={`/`} className="btn btn-lg btn-link homeBtn"><i className="fa fa-arrow-circle-left fa-1x"></i>Home</Link>
 
         </div>

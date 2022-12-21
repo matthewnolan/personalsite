@@ -32,7 +32,7 @@ const W3Operations = {
 
 
 export const Header: React.FC = () => (
-      <nav className="navbar navbar-expand-sm -navbar-light">
+      <nav className="navbar navbar-expand-sm -navbar-light mb-4">
         <Link href={`/`} className="navbar-brand">
           {globals.siteName}
         </Link>

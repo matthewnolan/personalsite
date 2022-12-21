@@ -7,7 +7,7 @@ export const Markdown: React.FC<{ source: string }> = (props) => {
   // console.log(props.source);
 
   return (
-    // <div style={{ width: '100%' }} className="devii-markdown">
+    <div style={{ width: '100%' }} className="devii-markdown">
       <ReactMarkdown
         key="content"
         source={props.source}
@@ -18,6 +18,6 @@ export const Markdown: React.FC<{ source: string }> = (props) => {
         escapeHtml={false}
       >
       </ReactMarkdown>
-    // </div>
+    </div>
   );
 };
