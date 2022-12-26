@@ -34,6 +34,7 @@ export const Author: React.FC<{ post: PostData }> = (props) => {
         margin: '0px',
         padding: '0px',
       }}
+      itemProp={'person'} itemScope itemType={'http://schema.org/Person'}
     >
       <div
         style={{
@@ -43,18 +44,19 @@ export const Author: React.FC<{ post: PostData }> = (props) => {
           justifyContent: 'flex-start',
         }}
       >
-        {props.post.authorPhoto && (
+        {/* {props.post.authorPhoto && (
           <img
             src={props.post.authorPhoto}
             alt={props.post.author}
             style={{
+              display: 'hidden',
               width: '70px',
               height: '70px',
               borderRadius: '35px',
               margin: '0px 10px 0px 0px',
             }}
           />
-        )}
+        )} */}
         <AuthorLines post={props.post} />
       </div>
     </div>
@@ -70,11 +72,14 @@ export const AuthorLines: React.FC<{ post: PostData }> = (props) => {
   };
   return (
     <div>
-      <p style={{ ...lineStyle }}>
+      <p style={{ ...lineStyle }} itemProp={'name'}>
         {props.post.author ? props.post.author : ''}
       </p>
 
-      <p style={{ opacity: 0.6, ...lineStyle }}>
+      <p style={{ opacity: 0.6, ...lineStyle }} 
+        itemProp={'datePublished'}
+        content={props.post.datePublished}
+      >
         {props.post.datePublished
           ? format(new Date(props.post.datePublished), 'MMMM Do, YYYY')
           : ''}

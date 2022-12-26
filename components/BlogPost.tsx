@@ -14,13 +14,14 @@ export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
 
   return (
     <div
-      style={{
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'center',
-        width: '100%',
-        padding: '0px 0px 100px 0px',
-      }}
+    style={{
+      display: 'flex',
+      flexDirection: 'row',
+      justifyContent: 'center',
+      width: '100%',
+      padding: '0px 0px 100px 0px',
+    }}
+    itemProp={'article'} itemScope itemType={'http://schema.org/Article'}
     >
       <PostMeta post={post} />
       <div style={{ 
@@ -36,6 +37,7 @@ export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
             }}
             src={post.bannerPhoto}
             alt={post.title}
+            itemProp={'image'}
           />
         )}
         <div style={{ 
@@ -49,6 +51,7 @@ export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
                 padding: 0,
                 border: 'none',
               }}
+              itemProp={'headline'}
             >
               {title}
             </h1>
@@ -78,7 +81,7 @@ export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
 
         </div>
 
-        <div className="postBodyText" style={{ width: '100%', padding: '0px 0px' }}>
+        <div className="postBodyText" itemProp={'articleBody'} style={{ width: '100%', padding: '0px 0px' }}>
           
           <Markdown source={post.content} />
 
