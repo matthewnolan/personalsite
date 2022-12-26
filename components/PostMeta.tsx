@@ -4,7 +4,7 @@ import { Meta } from './Meta';
 import { format } from 'fecha';
 
 export const PostMeta: React.FC<{ post: PostData }> = ({ post }) => {
-  console.log(post);
+  // console.log(post);
   return (
     <div>
       <Meta

@@ -50,9 +50,6 @@ export const Header: React.FC = () => (
               <Link href={`/about`} className="nav-link">About</Link>
             </li>
             <li className="nav-item">
-              <Link href={`/contact`} className="nav-link">Contact</Link>
-            </li>
-            <li className="nav-item">
               <a className="nav-link" target="_blank" href="https://twitter.com/ImMatthewNolan"><i className="fa fa-twitter fa-1x"></i></a>
             </li>
           </ul>
@@ -80,7 +77,7 @@ function HomeMM() {
   console.log("web3 loaded ", loaded)
 
   const blockchainInfo = async () => {
-    console.log("----blockchainInfo");
+    // console.log("----blockchainInfo");
     const web3 = new Web3(library);
     return;
     // const web3 = new Web3(library.provider);
@@ -257,7 +254,7 @@ function HomeMM() {
   };
 
   return (
-    <div className="wallet-container">
+    <div className="wallet-container hidden">
 
       <button 
         onClick={() => {

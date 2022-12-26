@@ -34,7 +34,7 @@ export const Author: React.FC<{ post: PostData }> = (props) => {
         margin: '0px',
         padding: '0px',
       }}
-      itemProp={'person'} itemScope itemType={'http://schema.org/Person'}
+      itemProp={'author'} itemScope itemType={'http://schema.org/Person'}
     >
       <div
         style={{
