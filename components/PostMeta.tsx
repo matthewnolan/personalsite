@@ -18,7 +18,7 @@ export const PostMeta: React.FC<{ post: PostData }> = ({ post }) => {
       <div
         className='hidden'
         itemProp={'datePublished'}
-        content={post.datePublished ? format(new Date(post.datePublished), 'YYYY-MM-DD') : ''}
+        data-content={post.datePublished ? format(new Date(post.datePublished), 'YYYY-MM-DD') : ''}
       >{post.datePublished ? format(new Date(post.datePublished), 'YYYY-MM-DD') : ''}</div>
     </div>
   );

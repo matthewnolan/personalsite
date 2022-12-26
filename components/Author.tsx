@@ -78,7 +78,7 @@ export const AuthorLines: React.FC<{ post: PostData }> = (props) => {
 
       <p style={{ opacity: 0.6, ...lineStyle }} 
         itemProp={'datePublished'}
-        content={props.post.datePublished ? format(new Date(props.post.datePublished),'YYYY-MM-DD') : ''}
+        data-content={props.post.datePublished ? format(new Date(props.post.datePublished),'YYYY-MM-DD') : ''}
       >
         {props.post.datePublished
           ? format(new Date(props.post.datePublished), 'MMMM Do, YYYY')
