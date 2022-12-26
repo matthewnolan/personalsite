@@ -27,6 +27,7 @@ export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
       <div style={{ 
         // width: '100%', maxWidth: '600px' 
       }}>
+        <meta itemProp={'image'} content={post.thumbnailPhoto} />
         {post.bannerPhoto && (
           <img
             style={{

@@ -1,6 +1,7 @@
 import React from 'react';
 import { PostData } from '../loader';
 import { Meta } from './Meta';
+import { format } from 'fecha';
 
 export const PostMeta: React.FC<{ post: PostData }> = ({ post }) => {
   console.log(post);
@@ -14,9 +15,11 @@ export const PostMeta: React.FC<{ post: PostData }> = ({ post }) => {
           image: post.bannerPhoto,
         }}
         />
-      <div>stuff2</div>
-      <div>{post.title}</div>
-      <div>{post.datePublished}</div>
+      <div
+        className='hidden'
+        itemProp={'datePublished'}
+        content={post.datePublished ? format(new Date(post.datePublished), 'YYYY-MM-DD') : ''}
+      >{post.datePublished ? format(new Date(post.datePublished), 'YYYY-MM-DD') : ''}</div>
     </div>
   );
 };

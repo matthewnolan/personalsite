@@ -8,6 +8,8 @@ just push the repo to deploy to vercel
 https://matthewnolan.xyz/
 https://personalsite-gamma.vercel.app/
 
+# TW Card Info
+aspect ratio of 2:1 with minimum dimensions of 300x157 or maximum of 4096x4096 pixels.
 
 # SEO
 https://web.dev/

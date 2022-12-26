@@ -10,6 +10,7 @@ tags:
 thumbnailPhoto: /images/blog-ted-thumbnail.jpg
 bannerPhoto: /images/blog-TEDResidents-Matthew-Nolan.jpg
 canonicalUrl: /blog/ted-talk
+description: Matthew Nolans TED Talk - World Peace, One Swipe At A Time.
 ---
 
 I’m very honored to have been accepted into the Spring 2017 TED Residency class. The TED Residency an in-house incubator for breakthrough ideas. Residents spend four months in the TED office with fellow brilliant minds who are creatively taking on projects that are making significant changes in their communities, across many different fields. At the end of their session, Residents have the opportunity to give a TED Talk about their ideas. [More info here](https://blog.ted.com/meet-the-spring-2017-class-of-ted-residents/).
