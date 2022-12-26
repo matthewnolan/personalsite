@@ -55,3 +55,6 @@ Name
 @
 Value
 76.76.21.21
+
+## TODO
+- add json for posts https://developers.google.com/search/docs/appearance/structured-data/article#json-ld
