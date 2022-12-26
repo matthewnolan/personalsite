@@ -12,9 +12,7 @@ export const Meta: React.FC<{
 }> = (props) => {
   const { meta } = props;
   const canonical = `${globals.url}${meta.link}`;
-  console.log(canonical);
-  console.log(meta);
-  console.log(globals.url)
+  // console.log(canonical);
   return (
     <NextHead>
       <title>{meta.title}</title>
