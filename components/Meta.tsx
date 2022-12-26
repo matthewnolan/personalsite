@@ -49,7 +49,7 @@ export const Meta: React.FC<{
       {meta.image && <meta name="twitter:tile:image" content={globals.url + meta.image} />}
       {meta.image && <meta property="og:image" content={`${globals.url + meta.image}`} />}
       <meta name="twitter:tile:info1:text" content="Matthew Nolan" />
-      <meta name="twitter:tile:info2:text" content="Dec 15, 2022" />
+      {/* <meta name="twitter:tile:info2:text" content="Dec 15, 2022" /> */}
 
     </NextHead>
   );

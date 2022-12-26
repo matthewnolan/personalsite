@@ -91,7 +91,7 @@ const App: React.FC = ({ Component, pageProps }: any) => {
 
         <meta property="fb:app_id" content="1549968485265325" />
 
-        <link rel="canonical" href="https://matthewnolan.xyz/" />
+        {/* <link rel="canonical" href="https://matthewnolan.xyz/" /> */}
         <link rel="icon" href="/favicon.ico" />
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
