@@ -7,5 +7,5 @@ export namespace globals {
   export const email = `support@menlo.one`;
   export const url = 'https://matthewnolan.xyz';
   export const accentColor = `#333333`;
-  export const googleAnalyticsId = ``; // e.g. 'UA-999999999-1'
+  export const googleAnalyticsId = `G-W8GBH6R61K`; // e.g. 'UA-999999999-1'
 }

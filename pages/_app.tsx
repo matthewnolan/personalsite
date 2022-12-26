@@ -3,7 +3,7 @@ import React from 'react';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { PostCardSide } from '../components/PostCardSide';
-// import { globals } from '../globals';
+import { globals } from '../globals';
 import './global.css';
 
 // ------- S Web3 Stuff
@@ -31,6 +31,19 @@ import { Web3Provider } from "@ethersproject/providers";
 //   Disconnect: "disconnect",
 // };
 
+// import ReactGA from 'react-ga';
+// ReactGA.initialize('UA-000000-01');
+// ReactGA.initialize('GTM-549ZHQD');
+// ReactGA.pageview(window.location.pathname + window.location.search);
+// ReactGA.initialize('UA-347500637', {
+//   debug: true,
+//   titleCase: false,
+//   gaOptions: {
+//     userId: 123
+//   }
+// });
+
+
 function getLibrary(provider: any) {
   const library = new Web3Provider(provider);
   // library.pollingInterval = 12000;
@@ -48,13 +61,27 @@ const App: React.FC = ({ Component, pageProps }: any) => {
 
   let allPosts = [];
   if (!pageProps.hasOwnProperty('posts')) {
-    console.log("no has posts");
+    // console.log("no has posts");
   } else { allPosts = pageProps.posts; }
 
   return (
     <div>
 
       <Head>
+
+        {globals.googleAnalyticsId && (
+          <script async src={`https://www.googletagmanager.com/gtag/js?id=${globals.googleAnalyticsId}`}></script>
+        )}
+        {globals.googleAnalyticsId && (
+          <script dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${globals.googleAnalyticsId}');
+            `,
+          }}></script>
+        )}
 
         <meta name="description" content="Matthew Nolan: Blockchain Engineer, Founder, Investor, Builder of Apps." />
         <meta name="keywords" content="Matthew Nolan, blockchain, crypto, app, ethereum, dapp, Verona, Menlo One" />
