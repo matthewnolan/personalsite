@@ -18,7 +18,7 @@ export const Meta: React.FC<{
       <title>{meta.title}</title>
       <meta name="copyright" content="Matthew Nolan" />
 
-      {meta.link && <link rel="canonical" href={globals.url + meta.link} />}
+      {meta.link && <link rel="canonical" href={globals.url + meta.link + '/'} />}
       {meta.desc && <meta name="description" content={meta.desc} />}
 
       <meta property="og:type" content="website" />
@@ -31,7 +31,7 @@ export const Meta: React.FC<{
         />
       )}
       <meta property="og:site_name" content={globals.siteName} />
-      {meta.link && <meta property="og:url" content={`${globals.url+meta.link}`} />}
+      {meta.link && <meta property="og:url" content={`${globals.url + meta.link + '/'}`} />}
 
       <meta name="twitter:site" content={globals.twitterHandle} />
       <meta name="twitter:card" content="summary_large_image" />

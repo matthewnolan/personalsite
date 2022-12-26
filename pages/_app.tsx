@@ -61,16 +61,20 @@ const App: React.FC = ({ Component, pageProps }: any) => {
         <meta httpEquiv="content-language" content="en" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Matthew Nolan" />
-        <meta name="url" content="https://matthewnolan.xyz" />
-        <meta name="identifier-URL" content="https://matthewnolan.xyz" />
+        <meta name="url" content="https://matthewnolan.xyz/" />
+        <meta name="identifier-URL" content="https://matthewnolan.xyz/" />
 
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="matthewnolan.xyz" />
         <meta name="twitter:site" content="@ImMatthewNolan" />
         <meta name="twitter:title" content="Matthew Nolan Blog" />
         <meta name="twitter:description" content="Matthew Nolan. Entrepreneur, Engineer, Investor." />
         <meta name="twitter:creator" content="@ImMatthewNolan" />
-        <meta name="twitter:url" content="https://matthewnolan.xyz" />
-        <meta name="twitter:image" content="https://matthewnolan.xyz/images/matthew-nolan-thumbnail.jpg" />
+        <meta name="twitter:url" content="https://matthewnolan.xyz/" />
+        <meta property="twitter:url" content="https://matthewnolan.xyz/" />
+        <meta name="twitter:image" content="https://matthewnolan.xyz/images/blog-timber-network-ethereum-dao-secret-vote-1500x750.jpg" />
+
+        <meta property="fb:app_id" content="1549968485265325" />
 
         <link rel="canonical" href="https://matthewnolan.xyz" />
         <link rel="icon" href="/favicon.ico" />
