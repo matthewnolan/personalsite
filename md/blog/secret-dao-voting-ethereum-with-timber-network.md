@@ -10,7 +10,7 @@ tags:
 thumbnailPhoto: /images/blog-timber-network-ethereum-dao-secret-vote-thumbnail-400x400.jpg
 bannerPhoto: /images/blog-timber-network-ethereum-dao-secret-vote-1500x750.jpg
 canonicalUrl: /blog/secret-dao-voting-ethereum-with-timber-network
-description: We are developing a new cross-chain messaging relayer we call Timber Network, which we used to allow Ethereum DAOs to viet secretly. 
+description: We are developing a new cross-chain messaging relayer we call Timber Network, which we used to allow Ethereum DAOs to vote secretly. 
 ---
 
 In Brief:
