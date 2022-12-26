@@ -14,12 +14,13 @@ export const Meta: React.FC<{
   const canonical = `${globals.url}${meta.link}`;
   console.log(canonical);
   console.log(meta);
+  console.log(globals.url)
   return (
     <NextHead>
       <title>{meta.title}</title>
       <meta name="copyright" content="Matthew Nolan" />
 
-      {meta.link && <link rel="canonical" href={meta.link} />}
+      {meta.link && <link rel="canonical" href={globals.url + meta.link} />}
       {meta.desc && <meta name="description" content={meta.desc} />}
 
       <meta property="og:type" content="website" />
@@ -39,8 +40,8 @@ export const Meta: React.FC<{
       {meta.desc && <meta name="twitter:description" content={meta.desc} />}
       <meta name="twitter:site" content={globals.twitterHandle} />
       <meta name="twitter:creator" content={globals.twitterHandle} />
-      {meta.image && <meta name="twitter:image" content={meta.image} />}
-      {meta.image && <meta property="og:image" content={`${meta.image}`} />}
+      {meta.image && <meta name="twitter:image" content={globals.url + meta.image} />}
+      {meta.image && <meta property="og:image" content={`${globals.url + meta.image}`} />}
     </NextHead>
   );
 };
