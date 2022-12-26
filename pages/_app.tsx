@@ -31,18 +31,6 @@ import { Web3Provider } from "@ethersproject/providers";
 //   Disconnect: "disconnect",
 // };
 
-// import ReactGA from 'react-ga';
-// ReactGA.initialize('UA-000000-01');
-// ReactGA.initialize('GTM-549ZHQD');
-// ReactGA.pageview(window.location.pathname + window.location.search);
-// ReactGA.initialize('UA-347500637', {
-//   debug: true,
-//   titleCase: false,
-//   gaOptions: {
-//     userId: 123
-//   }
-// });
-
 
 function getLibrary(provider: any) {
   const library = new Web3Provider(provider);
@@ -50,7 +38,6 @@ function getLibrary(provider: any) {
   return library;
 }
 // ------- E Web3 Stuff
-
 
 
 
