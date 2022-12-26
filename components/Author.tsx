@@ -78,7 +78,7 @@ export const AuthorLines: React.FC<{ post: PostData }> = (props) => {
 
       <p style={{ opacity: 0.6, ...lineStyle }} 
         itemProp={'datePublished'}
-        content={props.post.datePublished}
+        content={props.post.datePublished ? format(new Date(props.post.datePublished),'YYYY-MM-DD') : ''}
       >
         {props.post.datePublished
           ? format(new Date(props.post.datePublished), 'MMMM Do, YYYY')
@@ -93,6 +93,7 @@ export const AuthorLines: React.FC<{ post: PostData }> = (props) => {
               color: '#3b9488',
               // fontSize: '110%',
             }}
+            itemProp={'url'}
             href={`https://twitter.com/${props.post.authorTwitter}`}
             target="_blank"
           >{`@${props.post.authorTwitter}`}</a>
