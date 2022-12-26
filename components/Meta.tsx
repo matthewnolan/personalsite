@@ -33,7 +33,7 @@ export const Meta: React.FC<{
         />
       )}
       <meta property="og:site_name" content={globals.siteName} />
-      {meta.link && <meta property="og:url" content={`${meta.link}`} />}
+      {meta.link && <meta property="og:url" content={`${globals.url+meta.link}`} />}
 
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:title" content={meta.title} />
