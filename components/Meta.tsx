@@ -22,10 +22,10 @@ export const Meta: React.FC<{
       {meta.desc && <meta name="description" content={meta.desc} />}
 
       <meta property="og:type" content="website" />
-      <meta name="og:title" property="og:title" content={meta.title} />
+      <meta property="og:title" content={meta.title} />
       {meta.desc && (
         <meta
-          name="og:description"
+          // name="og:description"
           property="og:description"
           content={meta.desc}
         />

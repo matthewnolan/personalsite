@@ -24,7 +24,7 @@ const Home = (props: {
       {/* <div className="btn" onClick={() => { blockchainInfo(); }}>BLOCKCHAIN!</div> */}
       {/* <div>{web3React.account}</div> */}
       <Head>
-        <title>Matthew Nolan | Entrepreneur, Engineer, Investor</title>
+        <title>Matthew Nolan | Blockchain Engineer, Founder, Investor, Builder of Apps.</title>
       </Head>
 
       <section
@@ -37,7 +37,7 @@ const Home = (props: {
             style={{ maxWidth: '80px', maxHeight: '80px', margin: '1em' }} 
           />
           <h1 className="h4">I'm Matthew Nolan</h1>
-          <h2 className="h6">Entrepreneur | Engineer | Investor</h2>
+          <h2 className="h6">Blockchain Engineer | Founder | Investor | Builder of Apps</h2>
         </div>
 
         <div className="basicHeadline">
@@ -46,6 +46,8 @@ const Home = (props: {
             <a href="http://www.linkedin.com/in/buildbuildbuild/" target="_blank" className="btn btn-link">LinkedIn</a>
             <a href="https://github.com/matthewnolan" target="_blank" className="btn btn-link">Github</a>
             <a href="https://angel.co/u/matthew-nolan" target="_blank" className="btn btn-link">Angel List</a>
+            <a href="https://medium.com/@ImMatthewNolan" target="_blank" className="btn btn-link">Medium</a>
+            <a href="https://mirror.xyz/matthewnolan.eth/" target="_blank" className="btn btn-link">Mirror</a>
             <a href="https://www.menlo.one" target="_blank" className="btn btn-link">Menlo One</a>
           </p>
         </div>

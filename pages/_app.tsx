@@ -56,8 +56,8 @@ const App: React.FC = ({ Component, pageProps }: any) => {
 
       <Head>
 
-        <meta name="description" content="Hi I'm Matthew Nolan. I build blockchain technology that makes the world more open and connected." />
-        <meta name="keywords" content="Matthew Nolan, blockchain, crypto, app, Verona, Menlo One" />
+        <meta name="description" content="Matthew Nolan: Blockchain Engineer, Founder, Investor, Builder of Apps." />
+        <meta name="keywords" content="Matthew Nolan, blockchain, crypto, app, ethereum, dapp, Verona, Menlo One" />
         <meta httpEquiv="content-language" content="en" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Matthew Nolan" />
@@ -65,18 +65,19 @@ const App: React.FC = ({ Component, pageProps }: any) => {
         <meta name="identifier-URL" content="https://matthewnolan.xyz/" />
 
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:domain" content="matthewnolan.xyz" />
         <meta property="twitter:domain" content="matthewnolan.xyz" />
         <meta name="twitter:site" content="@ImMatthewNolan" />
-        <meta name="twitter:title" content="Matthew Nolan Blog" />
-        <meta name="twitter:description" content="Matthew Nolan. Entrepreneur, Engineer, Investor." />
+        <meta name="twitter:title" content="Matthew Nolan: Blockchain Engineer" />
+        <meta name="twitter:description" content="Matthew Nolan: Blockchain Engineer, Founder, Investor, Builder of Apps." />
         <meta name="twitter:creator" content="@ImMatthewNolan" />
         <meta name="twitter:url" content="https://matthewnolan.xyz/" />
         <meta property="twitter:url" content="https://matthewnolan.xyz/" />
-        <meta name="twitter:image" content="https://matthewnolan.xyz/images/blog-timber-network-ethereum-dao-secret-vote-1500x750.jpg" />
+        <meta name="twitter:image" content="https://matthewnolan.xyz/images/blog-tedresidents-matthew-nolan-2x1.jpg" />
 
         <meta property="fb:app_id" content="1549968485265325" />
 
-        <link rel="canonical" href="https://matthewnolan.xyz" />
+        <link rel="canonical" href="https://matthewnolan.xyz/" />
         <link rel="icon" href="/favicon.ico" />
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
