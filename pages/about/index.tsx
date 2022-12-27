@@ -31,7 +31,7 @@ const About = () => {
       />
       <h2 className="h4 mt-4">Contact</h2>
       <ul className="list-inline">
-        <li>Email - the best way to contact me: <b>matthew at menlo dot one</b></li>
+        <li>Email - <b>matthew at menlo dot one</b></li>
         <li>Twitter: <a target="_blank" href="https://twitter.com/ImMatthewNolan">@ImMatthewNolan</a></li>
         <li>ENS Address: <a target="_blank" href="https://matthewnolan.eth">matthewnolan.eth</a></li>
       </ul>
