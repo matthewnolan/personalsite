@@ -117,7 +117,7 @@ const App: React.FC = ({ Component, pageProps }: any) => {
 
             <div className="col-xl-3 col-lg-3 col-md-3 ml-md-auto -ml-auto" style={{backgroundColor:'transparent', marginTop:'8em'}}>
               <div className="list-group">
-                <small className="list-group-item">Recent Posts</small>
+                <small className="list-group-item recentposts">Recent Posts</small>
                   {allPosts.map((post: any, j: any) => {
                     return <PostCardSide post={post} key={j} />;
                   })}

@@ -126,7 +126,7 @@ const Home = (props: {
       </section>
 
       <section className="">
-        <h4 className="text-center">Recent Posts</h4>
+        <h4 className="text-center recentposts">Recent Posts</h4>
         <div className="list-group">
           <div
             style={{
