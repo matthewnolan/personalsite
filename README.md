@@ -37,6 +37,7 @@ https://github.com/jscottsmith/react-scroll-parallax
 
 # Play w GFX
 https://www.pinterest.com/pin/765119424170551781/
+https://cargocollective.com/matthewdivito/Animated-Gifs-02
 
 I like their colors
 https://www.theblock.co/

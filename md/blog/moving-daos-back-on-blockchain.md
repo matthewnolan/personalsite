@@ -8,8 +8,8 @@ authorPhoto: /images/matthew-nolan-thumbnail.jpg
 tags: 
   - Ethereum
   - DAO
-thumbnailPhoto: /images/blog-dao-400x400.jpg
-bannerPhoto: /images/blog-dao-800x400.jpg
+thumbnailPhoto: /images/blog-nft-worm300x300.gif
+bannerPhoto: /images/blog-nft-worm500x1000.gif
 canonicalUrl: /blog/moving-daos-back-on-blockchain
 description: There are many benefits to moving DAOs back on-chain which many are overlooking. I wanted to drop a few feature concepts of the sort of problems entirely on-chain DAOs might solve.
 ---
