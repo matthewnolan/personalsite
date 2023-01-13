@@ -14,7 +14,7 @@ tags:
 thumbnailPhoto: /images/blog-timber-network-ethereum-dao-secret-vote-thumbnail-400x400.jpg
 bannerPhoto: /images/blog-timber-network-ethereum-dao-secret-vote-1500x750.jpg
 canonicalUrl: /blog/secret-dao-voting-ethereum-with-timber-network
-description: We are developing a new cross-chain messaging relayer we call Timber Network, which we used to allow Ethereum DAOs to vote secretly. 
+description: We are developing a new cross-chain messaging relayer we call Timber Network, which we used to allow Ethereum DAOs to vote secretly by leveraging the Secret blockchain. 
 ---
 
 In Brief:
@@ -22,6 +22,13 @@ In Brief:
 - We used it for a prototype which leverages the [Secret Network](https://scrt.network/) to enable Ethereum DAOs to vote secretly without ever having to migrate their ERC20 tokens (video demo below).
 - Our prototype [won hackathon sponsored by BitDao](https://twitter.com/sozuhaus/status/1600305757353701377), of which we are extremely honored.
 - 🌳🌐
+
+
+<p><div className="text-center embed-container">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/xgD8ouIV50M" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope" allowfullscreen></iframe>
+</div>
+<small>In this video I demonstrate an Ethereum DAO user doing secret ballot voting by using Timber Network to leverage the privacy features of Secret Network without having migrate their tokens off of Ethereum.</small>
+</p>
 
 # Application Specific Cross-Chain Messaging
 
@@ -42,12 +49,6 @@ Timber Network has three primary components: a base blockchain which manages gov
 There are other blockchains which have privacy features, one of our favorites being [The Secret Network](https://scrt.network/). But it's difficult for a DAO to simply pack up and migrate to an entirely different blockchain because the DAO might have voting tokens which they cannot bridge, a locked treasury, or using ENS for their identity. With an "application specific" cross-chain relayer, the DAO can balance the strengths and weakness of multiple chains together such as keeping their voting tokens on Ethereum but using the privacy of Secret Network to vote.
 
 **Solution:** To demonstrate this we built a prototype which balances both networks. We have contracts deployed to both Secret and Ethereum and a relayer with limited permissions on each. Upon voting the relayer provides Secret with the only data points it needs to know: a signed message with their ETH address, voting token balance, and chain metadata which registers the user to vote on Secret.
-
-<p><div className="text-center embed-container">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/xgD8ouIV50M" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope" allowfullscreen></iframe>
-</div>
-<small>In this video I demonstrate an Ethereum DAO user doing secret ballot voting by using Timber Network to leverage the privacy features of Secret Network without having migrate their tokens off of Ethereum.</small>
-</p>
 
 What is known is that a user is registered but not what they voted for. At the end of the proposal only the result is sent back to Ethereum, where it would be possible to then call another contract such as a treasury contract. All execution is trustless, votes are private, and the relayer only has permissions to read and write these specific data.
 
