@@ -19,7 +19,7 @@ description: We are developing a new cross-chain messaging relayer we call Timbe
 
 In Brief:
 - Some colleagues and I are developing a new cross-chain messaging relayer we call [Timber Network](https://github.com/timbernetwork). 
-- We used it for a prototype which lets Ethereum DAOs vote secretly (video demo below).
+- We used it for a prototype which leverages the [Secret Network](https://scrt.network/) to enable Ethereum DAOs to vote secretly without ever having to migrate their ERC20 tokens (video demo below).
 - Our prototype [won hackathon sponsored by BitDao](https://twitter.com/sozuhaus/status/1600305757353701377), of which we are extremely honored.
 - 🌳🌐
 
