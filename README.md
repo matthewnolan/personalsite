@@ -35,9 +35,10 @@ https://www.epochconverter.com/
 https://github.com/jstejada/react-typist
 https://github.com/jscottsmith/react-scroll-parallax
 
-# Play w GFX
+# Play w GFX - Mr Div
 https://www.pinterest.com/pin/765119424170551781/
 https://cargocollective.com/matthewdivito/Animated-Gifs-02
+https://mrdiv.tumblr.com/
 
 I like their colors
 https://www.theblock.co/
