@@ -12,3 +12,4 @@ A serverless blog with posts in markdown.
 
 
 Gifs from https://mrdiv.tumblr.com/
+Tks to https://devii.dev/
