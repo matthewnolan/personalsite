@@ -1,4 +1,3 @@
-// TODO fix https://github.com/colinhacks/devii/blob/master/sitemap.ts
 export const sitemap = '';
 import glob from 'glob';
 import { globals } from './globals';

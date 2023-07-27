@@ -6,45 +6,8 @@ import { PostCardSide } from '../components/PostCardSide';
 import { globals } from '../globals';
 import './global.css';
 
-// ------- S Web3 Stuff
-// import { useEffect, useState, useRef } from "react";
-// import { useEffect, useState } from "react";
-// import { useWeb3React, Web3ReactProvider } from "@web3-react/core";
-import { Web3ReactProvider } from "@web3-react/core";
-// import { InjectedConnector } from "@web3-react/injected-connector";
-// import { WalletConnectConnector } from "@web3-react/walletconnect-connector";
-import { Web3Provider } from "@ethersproject/providers";
-// import useLocalStorage from "../hooks/useLocalStorage";
-// import { MetamaskIcon, WalletConnectIcon } from "../components/icons";
-
-// Needed where Web3 is used
-// const injected = new InjectedConnector({ supportedChainIds: [1, 3, 4, 5, 42] });
-// const wcConnector = new WalletConnectConnector({
-//   infuraId: "517bf3874a6848e58f99fa38ccf9fce4",
-// });
-// const ConnectorNames = {
-//   Injected: "injected",
-//   WalletConnect: "walletconnect",
-// };
-// const W3Operations = {
-//   Connect: "connect",
-//   Disconnect: "disconnect",
-// };
-
-
-function getLibrary(provider: any) {
-  const library = new Web3Provider(provider);
-  // library.pollingInterval = 12000;
-  return library;
-}
-// ------- E Web3 Stuff
-
-
-
 
 const App: React.FC = ({ Component, pageProps }: any) => {
-
-  // console.log("appprops ", pageProps);
 
   let allPosts = [];
   if (!pageProps.hasOwnProperty('posts')) {
@@ -104,7 +67,7 @@ const App: React.FC = ({ Component, pageProps }: any) => {
 
       </Head>
 
-      <Web3ReactProvider getLibrary={getLibrary}>
+      {/* <Web3ReactProvider getLibrary={getLibrary}> */}
 
         <Header />
 
@@ -126,7 +89,7 @@ const App: React.FC = ({ Component, pageProps }: any) => {
 
           </div> { /*e row justify-content-sm-center */ }
         </div> { /*e container */ }
-      </Web3ReactProvider>
+      {/* </Web3ReactProvider> */}
 
 
       <Footer />
@@ -142,4 +105,3 @@ const App: React.FC = ({ Component, pageProps }: any) => {
 };
 
 export default App;
-

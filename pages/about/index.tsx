@@ -10,16 +10,12 @@ const About = () => {
         <title>About Matthew Nolan</title>
       </Head>
 
-
-
 <section>
   <div className="text-center basicHeadline">
     <h1 className="h3">About Matthew Nolan</h1>
     <h2 className="h5">Awards, Talks, Interviews, Other Stuff</h2>
   </div>
 </section>
-
-
 
 <section className="">
   <div className="row">
@@ -108,4 +104,3 @@ export const getStaticProps = async () => {
   const props = { posts };
   return { props };
 };
-
