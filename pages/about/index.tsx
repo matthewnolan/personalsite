@@ -65,6 +65,10 @@ const About = () => {
         <li><a href="http://www.webbyawards.com/winners/2016/mobile-sites-apps/general-sites-apps/social/verona/" target="_blank">The Webby Awards - 2016 Official Honoree</a></li>
 
         <li><a href="http://www.fastcompany.com/company/verona" target="_blank">Fast Company - 2016 Most Innovative Companies</a></li>
+
+        <li><a href="https://museaward.com/winner-info.php?id=403" target="_blank">Muse Awards, 2016</a></li>
+
+        <li><a href="https://vegaawards.com/winner-info.php?id=258" target="_blank">Vega Awards, 2016</a></li>
       </ul>
 
 
