@@ -33,7 +33,7 @@ const App: React.FC = ({ Component, pageProps }: any) => {
           }}></script>
         )}
 
-        <meta name="description" content="Matthew Nolan: Blockchain Engineer, Founder, Investor, Builder of Apps." />
+        <meta name="description" content="Matthew Nolan: Blockchain Engineer, Founder, Investor." />
         <meta name="keywords" content="Matthew Nolan, blockchain, crypto, app, ethereum, dapp, Verona, Menlo One" />
         <meta httpEquiv="content-language" content="en" />
         <meta name="robots" content="index, follow" />
@@ -46,13 +46,13 @@ const App: React.FC = ({ Component, pageProps }: any) => {
         <meta property="twitter:domain" content="matthewnolan.xyz" />
         <meta name="twitter:site" content="@ImMatthewNolan" />
         <meta name="twitter:title" content="Matthew Nolan: Blockchain Engineer" />
-        <meta name="twitter:description" content="Matthew Nolan: Blockchain Engineer, Founder, Investor, Builder of Apps." />
+        <meta name="twitter:description" content="Matthew Nolan: Blockchain Engineer, Founder, Investor." />
         <meta name="twitter:creator" content="@ImMatthewNolan" />
         <meta name="twitter:url" content="https://matthewnolan.xyz/" />
         <meta property="twitter:url" content="https://matthewnolan.xyz/" />
         <meta name="twitter:image" content="https://matthewnolan.xyz/images/blog-tedresidents-matthew-nolan-2x1.jpg" />
 
-        <meta property="fb:app_id" content="1549968485265325" />
+        {/* <meta property="fb:app_id" content="1549968485265325" /> */}
 
         <link rel="canonical" href="https://matthewnolan.xyz/" />
         <link rel="icon" href="/favicon.ico" />
