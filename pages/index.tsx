@@ -45,9 +45,9 @@ const Home = (props: {
             <a href="https://twitter.com/ImMatthewNolan" target="_blank" className="btn btn-link">Twitter</a>
             <a href="http://www.linkedin.com/in/buildbuildbuild/" target="_blank" className="btn btn-link">LinkedIn</a>
             <a href="https://github.com/matthewnolan" target="_blank" className="btn btn-link">Github</a>
-            <a href="https://angel.co/u/matthew-nolan" target="_blank" className="btn btn-link">Angel List</a>
+            {/* <a href="https://angel.co/u/matthew-nolan" target="_blank" className="btn btn-link">Angel List</a> */}
             <a href="https://medium.com/@ImMatthewNolan" target="_blank" className="btn btn-link">Medium</a>
-            <a href="https://mirror.xyz/matthewnolan.eth/" target="_blank" className="btn btn-link">Mirror</a>
+            {/* <a href="https://mirror.xyz/matthewnolan.eth/" target="_blank" className="btn btn-link">Mirror</a> */}
 
           </p>
         </div>
