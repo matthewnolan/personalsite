@@ -34,7 +34,7 @@ const App: React.FC = ({ Component, pageProps }: any) => {
         )}
 
         <meta name="description" content="Matthew Nolan: Blockchain Engineer, Founder, Investor." />
-        <meta name="keywords" content="Matthew Nolan, blockchain, crypto, app, ethereum, dapp, Verona, Menlo One" />
+        <meta name="keywords" content="Matthew Nolan, blockchain, crypto, app, ethereum, dapp, Verona" />
         <meta httpEquiv="content-language" content="en" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Matthew Nolan" />

@@ -74,7 +74,7 @@ const About = () => {
       <h2 className="h4 mt-4">Interviews</h2>
       <ul className="list-inline">
         <li><a href="https://youtu.be/mZ3eOQ9ysQs" target="_blank">
-        Documentry: Menlo One at Puerto Rico Blockchain Week
+        Documentry: Puerto Rico Blockchain Week
         </a></li>
         <li><a href="https://youtu.be/6hDZQhnF-yQ" target="_blank">
         Improving Blockchain Usability at Bitcoin Korea
