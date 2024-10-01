@@ -36,8 +36,8 @@ const Home = (props: {
           <img className="rounded-circle img-thumbnail" src="/images/matthew-nolan-thumbnail.jpg" alt="Matthew Nolan" 
             style={{ maxWidth: '80px', maxHeight: '80px', margin: '1em' }} 
           />
-          <h1 className="h4">I'm Matthew Nolan</h1>
-          <h2 className="h6">Blockchain Engineer | Founder | Investor | Builder of Apps</h2>
+          <h1 className="h4">Matthew Nolan</h1>
+          <h2 className="h6">Blockchain Engineer | Founder | Investor</h2>
         </div>
 
         <div className="basicHeadline">
@@ -48,7 +48,7 @@ const Home = (props: {
             <a href="https://angel.co/u/matthew-nolan" target="_blank" className="btn btn-link">Angel List</a>
             <a href="https://medium.com/@ImMatthewNolan" target="_blank" className="btn btn-link">Medium</a>
             <a href="https://mirror.xyz/matthewnolan.eth/" target="_blank" className="btn btn-link">Mirror</a>
-            <a href="https://www.menlo.one" target="_blank" className="btn btn-link">Menlo One</a>
+
           </p>
         </div>
 
@@ -58,9 +58,9 @@ const Home = (props: {
           }}
         >
           <p>
-            Hi I'm Matthew Nolan. I build technology that makes the world more open and connected. I'm the founder of <a href="https://menlo.one/" target="_blank">Menlo One</a>, a blockchain technology company that creates tooling and products for DAOs, exchanges, protocols, and enterprises.
+            I build technology that makes the world more open and connected. I'm a founder of <a href="https://blockriver.xyz/" target="_blank">BlockRiver Labs</a>, a blockchain research &amp; development team pushing the limits of Web3.
           </p><p>
-            I previously founded <a href="https://www.getverona.com/" target="_blank">Verona</a>, an app that connects people across social divides. At the dawn of the virtual work movement I co-founded Speek, a meeting and collaboration platform. I previously worked at IBM where I developed tools now used by millions of users. I built enterprise grade fintech systems at JP Morgan. I'm a <Link href={`/blog/ted-talk/`}>TED Resident alum</Link> and public speaker on the intersection of society, technology, and culture.
+            I previously founded <a href="https://www.getverona.com/" target="_blank">Verona</a>, an app that connects people across social divides. At the dawn of the virtual work movement I co-founded Speek, a meeting and collaboration platform. I'm a <Link href={`/blog/ted-talk/`}>TED Resident alum</Link> and public speaker on the intersection of society, technology, and culture.
           </p>
         </div>
       </section>

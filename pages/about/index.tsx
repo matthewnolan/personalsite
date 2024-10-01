@@ -27,7 +27,6 @@ const About = () => {
       />
       <h2 className="h4 mt-4">Contact</h2>
       <ul className="list-inline">
-        <li>Email - <b>matthew at menlo dot one</b></li>
         <li>Twitter: <a target="_blank" href="https://twitter.com/ImMatthewNolan">@ImMatthewNolan</a></li>
         <li>ENS Address: <a target="_blank" href="https://matthewnolan.eth">matthewnolan.eth</a></li>
       </ul>
@@ -62,9 +61,9 @@ const About = () => {
 
       <h2 className="h4 mt-4">Awards &amp; Honors</h2>
       <ul className="list-inline">
-        <li><a href="http://www.webbyawards.com/winners/2016/mobile-sites-apps/general-sites-apps/social/verona/" target="_blank">The Webby Awards - 2016 Official Honoree</a></li>
+        <li><a href="https://winners.webbyawards.com/2016/apps-dapps-and-software/general-apps/social/162196/verona" target="_blank">The Webby Awards - 2016</a></li>
 
-        <li><a href="http://www.fastcompany.com/company/verona" target="_blank">Fast Company - 2016 Most Innovative Companies</a></li>
+        <li><a href="https://www.fastcompany.com/most-innovative-companies/2016/sectors/israel" target="_blank">Fast Company - 2016 Most Innovative Companies</a></li>
 
         <li><a href="https://museaward.com/winner-info.php?id=403" target="_blank">Muse Awards, 2016</a></li>
 
