@@ -61,6 +61,8 @@ const Home = (props: {
             I build technology that makes the world more open and connected. I'm a founder of <a href="https://blockriver.xyz/" target="_blank">BlockRiver Labs</a>, a blockchain research &amp; development team pushing the limits of Web3.
           </p><p>
             I previously founded <a href="https://www.getverona.com/" target="_blank">Verona</a>, an app that connects people across social divides. At the dawn of the virtual work movement I co-founded Speek, a meeting and collaboration platform. I'm a <Link href={`/blog/ted-talk/`}>TED Resident alum</Link> and public speaker on the intersection of society, technology, and culture.
+          </p><p>
+            I am the host of The Crypto Disco&trade; Podcast. You can find it on: <a href="https://x.com/CryptoDiscoFun" target="_blank">X.com</a>, <a href="https://youtube.com/@cryptodiscofun" target="_blank">YouTube</a>, <a href="https://tiktok.com/@cryptodiscofun" target="_blank">TikTok</a>, <a href="https://open.spotify.com/show/6hbSo70V1ltkFAKU1xOvOQ" target="_blank">Spotify</a>.
           </p>
         </div>
       </section>
