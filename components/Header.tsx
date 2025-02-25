@@ -21,7 +21,7 @@ export const Header: React.FC = () => (
               <Link href={`/about`} className="nav-link">About</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" target="_blank" href="https://twitter.com/ImMatthewNolan"><i className="fa fa-twitter fa-1x"></i></a>
+              <a className="nav-link" target="_blank" href="https://x.com/CryptoDiscoFun"><i className="fa fa-twitter fa-1x"></i></a>
             </li>
           </ul>
         </div>

@@ -67,7 +67,7 @@ And I want all of that to happen in a way which is trustless, verifiable, privat
 
 # Final Thoughts
 
-Timber Network is under heavy development and there is still a lot of work to be done. If you're interested in working with us, please reach out on [Twitter](https://twitter.com/ImMatthewNolan) or email.
+Timber Network is under heavy development and there is still a lot of work to be done. If you're interested in working with us, please reach out on [Twitter](https://x.com/CryptoDiscoFun) or email.
 
 Team Timber would also like to give thanks to [BitDAO](https://www.bitdao.io/) and [Sozu House](https://twitter.com/sozuhaus) for their support on this project.
 

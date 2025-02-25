@@ -42,7 +42,7 @@ const Home = (props: {
 
         <div className="basicHeadline">
           <p className="text-center">
-            <a href="https://twitter.com/ImMatthewNolan" target="_blank" className="btn btn-link">Twitter</a>
+            <a href="https://x.com/CryptoDiscoFun" target="_blank" className="btn btn-link">Twitter</a>
             <a href="http://www.linkedin.com/in/buildbuildbuild/" target="_blank" className="btn btn-link">LinkedIn</a>
             <a href="https://github.com/matthewnolan" target="_blank" className="btn btn-link">Github</a>
             {/* <a href="https://angel.co/u/matthew-nolan" target="_blank" className="btn btn-link">Angel List</a> */}
